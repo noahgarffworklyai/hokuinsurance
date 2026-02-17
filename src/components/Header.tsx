@@ -46,8 +46,8 @@ const Header = () => {
       </div>
 
       {/* Main nav */}
-      <div className="container flex items-center justify-between py-4">
-        <a href="#" className="flex items-center">
+      <div className="container flex items-center justify-between py-2">
+        <a href="#" className="flex items-center -my-6">
           <img src={hokuLogo} alt="Hoku Insurance" className="h-[120px] lg:h-36 w-auto" />
         </a>
 
