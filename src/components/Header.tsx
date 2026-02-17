@@ -47,8 +47,8 @@ const Header = () => {
 
       {/* Main nav */}
       <div className="container flex items-center justify-between py-2">
-        <a href="#" className="flex items-center -mt-6 -mb-10 -ml-4">
-          <img src={hokuLogo} alt="Hoku Insurance" className={`w-auto transition-all duration-500 ${scrolled ? 'h-[100px] lg:h-[120px]' : 'h-[150px] lg:h-[180px]'}`} />
+        <a href="#" className={`flex items-center -ml-6 transition-all duration-500 ${scrolled ? '-my-4' : '-mt-4 -mb-14'}`}>
+          <img src={hokuLogo} alt="Hoku Insurance" className={`w-auto transition-all duration-500 ${scrolled ? 'h-[80px] lg:h-[90px]' : 'h-[160px] lg:h-[200px]'}`} />
         </a>
 
         {/* Desktop nav */}
