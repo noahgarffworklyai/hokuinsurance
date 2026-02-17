@@ -17,10 +17,6 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 pt-40 pb-28">
         <div className="max-w-3xl animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-gold text-sm font-medium mb-8">
-            <span className="w-2 h-2 rounded-full gradient-gold" />
-            Trusted Insurance Since Day One
-          </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-8">
             <span className="text-gold-light">Protecting What</span>
             <br />
