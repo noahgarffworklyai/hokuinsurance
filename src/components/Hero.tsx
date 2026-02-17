@@ -1,5 +1,4 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import hokuLogo from "@/assets/hoku-logo.png";
 
 const Hero = () => {
   return (
@@ -9,11 +8,6 @@ const Hero = () => {
         <img src={heroBg} alt="" className="w-full h-full object-cover scale-105" />
         <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/75 to-navy/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
-      </div>
-
-      {/* Logo watermark */}
-      <div className="absolute top-1/2 right-8 lg:right-16 -translate-y-1/2 opacity-[0.07] pointer-events-none">
-        <img src={hokuLogo} alt="" className="w-[500px] lg:w-[600px] h-auto" />
       </div>
 
       {/* Decorative elements */}
