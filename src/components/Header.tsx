@@ -51,7 +51,7 @@ const Header = () => {
               src={hokuLogo}
               alt="Hoku Insurance"
               className={`w-auto object-contain transition-all duration-500 ${
-                scrolled ? "h-[72px]" : "h-[100px]"
+                scrolled ? "h-[90px]" : "h-[140px]"
               }`}
             />
           </a>
