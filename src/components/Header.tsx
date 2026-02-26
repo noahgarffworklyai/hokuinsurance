@@ -71,6 +71,12 @@ const Header = () => {
                 scrolled ? "h-12" : "h-16"
               }`}
             />
+            <a
+              href="#contact"
+              className="absolute right-0 gradient-gold text-white px-5 py-2 text-[12px] font-semibold tracking-[0.15em] uppercase rounded-full shadow-sm hover:shadow-md hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03]"
+            >
+              Get a Quote
+            </a>
             <nav className="flex items-center justify-end gap-8">
               {leftLinks.map((l) => (
                 <a key={l.label} href={l.href} className={linkClass}>
@@ -95,12 +101,6 @@ const Header = () => {
                   {l.label}
                 </a>
               ))}
-              <a
-                href="#contact"
-                className="ml-2 gradient-gold text-white px-5 py-2 text-[12px] font-semibold tracking-[0.15em] uppercase rounded-full shadow-sm hover:shadow-md hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03]"
-              >
-                Get a Quote
-              </a>
             </nav>
           </div>
 
