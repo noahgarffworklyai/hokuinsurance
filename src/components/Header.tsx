@@ -68,7 +68,7 @@ const Header = () => {
               src={hawaiiIsland}
               alt=""
               className={`w-auto object-contain opacity-60 transition-all duration-500 ${
-                scrolled ? "h-8" : "h-10"
+                scrolled ? "h-12" : "h-16"
               }`}
             />
             <nav className="flex items-center justify-end gap-8">
