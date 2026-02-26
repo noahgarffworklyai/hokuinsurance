@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <img src={hokuLogo} alt="Hoku Insurance" className="h-20 w-auto mb-5" />
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Full-service commercial and personal lines Property &amp; Casualty insurance agency serving Hawai'i with
+              Full-service commercial and personal lines Property &amp; Casualty insurance agency serving Hawaii with
               aloha.
             </p>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
       <div className="border-t border-border">
         <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Hoku Insurance, LLC. All rights reserved.</p>
-          <p>Kailua-Kona, Hawai'i</p>
+          <p>Kailua-Kona, Hawaii</p>
         </div>
       </div>
     </footer>

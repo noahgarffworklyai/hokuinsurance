@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react";
 
 const highlights = [
   "Full-service commercial & personal P&C agency",
-  "Deep knowledge of Hawai'i-specific risks",
+  "Deep knowledge of Hawaii-specific risks",
   "Sister company offering ASO services",
   "Dedicated claims advocacy & support",
   "Locally owned and operated in Kailua-Kona",
@@ -21,7 +21,7 @@ const About = () => {
             </h2>
             <p className="text-white/65 leading-relaxed mb-4">
               Hoku — meaning "star" in Hawaiian — reflects our commitment to being a guiding light for our clients. 
-              As a locally owned insurance agency in Kailua-Kona, we understand the unique needs of Hawai'i's 
+              As a locally owned insurance agency in Kailua-Kona, we understand the unique needs of Hawaii's 
               businesses and families.
             </p>
             <p className="text-white/65 leading-relaxed mb-8">
