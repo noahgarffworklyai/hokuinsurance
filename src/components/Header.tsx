@@ -27,44 +27,64 @@ const Header = () => {
           : "bg-white/90 backdrop-blur-sm"
       }`}
     >
-      {/* Top bar */}
+      {/* Top utility bar */}
       <div
         className={`border-b border-navy/10 transition-all duration-500 ${
           scrolled ? "max-h-0 overflow-hidden opacity-0 py-0" : "max-h-20 opacity-100"
         }`}
       >
-        <div className="container flex items-center justify-end gap-6 py-2 text-sm text-navy/70">
+        <div className="container flex items-center justify-end gap-6 py-1.5 text-xs text-navy/60">
           <a href="tel:+18085551234" className="flex items-center gap-1.5 hover:text-primary transition-colors">
-            <Phone className="h-3.5 w-3.5" />
+            <Phone className="h-3 w-3" />
             <span>(808) 555-1234</span>
           </a>
           <span className="hidden sm:flex items-center gap-1.5">
-            <MapPin className="h-3.5 w-3.5" />
+            <MapPin className="h-3 w-3" />
             Kailua-Kona, HI
           </span>
         </div>
       </div>
 
-      {/* Main nav */}
-      <div className="container flex items-center justify-between py-2">
-        <a href="#" className={`flex items-center -ml-10 transition-all duration-500 ${scrolled ? '-my-4' : '-mt-4 -mb-14'}`}>
-          <img src={hokuLogo} alt="Hoku Insurance" className={`w-auto transition-all duration-500 ${scrolled ? 'h-[100px] lg:h-[110px]' : 'h-[220px] lg:h-[280px]'}`} />
-        </a>
-
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+      {/* Main nav - centered logo layout */}
+      <div className="container relative flex items-center justify-center py-1">
+        {/* Left nav items - desktop */}
+        <nav className="hidden md:flex items-center gap-6 absolute left-4 lg:left-8">
+          {navItems.slice(0, 2).map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="relative text-sm font-body font-medium tracking-wider uppercase text-navy/70 hover:text-primary transition-colors after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-xs font-body font-medium tracking-wider uppercase text-navy/70 hover:text-primary transition-colors after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Centered logo */}
+        <a href="#" className="flex items-center justify-center">
+          <img
+            src={hokuLogo}
+            alt="Hoku Insurance"
+            className={`w-auto transition-all duration-500 ${
+              scrolled ? "h-[70px] lg:h-[80px]" : "h-[100px] lg:h-[120px]"
+            }`}
+          />
+        </a>
+
+        {/* Right nav items + CTA - desktop */}
+        <nav className="hidden md:flex items-center gap-6 absolute right-4 lg:right-8">
+          {navItems.slice(2).map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="relative text-xs font-body font-medium tracking-wider uppercase text-navy/70 hover:text-primary transition-colors after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="gradient-gold text-white px-6 py-2.5 text-sm font-semibold tracking-wider uppercase rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 hover:scale-105"
+            className="gradient-gold text-white px-5 py-2 text-xs font-semibold tracking-wider uppercase rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 hover:scale-105"
           >
             Get a Quote
           </a>
@@ -72,7 +92,7 @@ const Header = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-navy"
+          className="md:hidden text-navy absolute right-4"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
