@@ -15,7 +15,7 @@ const About = () => {
       {/* Decorative blurs */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-slate-blue/10 rounded-full blur-3xl" />
-      <img src={hawaiiIsland} alt="" className="absolute bottom-8 right-8 w-48 lg:w-64 opacity-[0.06] pointer-events-none select-none" />
+      <img src={hawaiiIsland} alt="" className="absolute bottom-8 right-8 w-56 lg:w-72 opacity-[0.12] pointer-events-none select-none" />
 
       <div className="container relative">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
