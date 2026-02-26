@@ -9,7 +9,7 @@ const services = [
 {
   icon: Home,
   title: "Personal Lines",
-  description: "Protect your home, auto, and personal assets with tailored policies designed for Hawai'i residents."
+  description: "Protect your home, auto, and personal assets with tailored policies designed for Hawaii residents."
 },
 {
   icon: Shield,
