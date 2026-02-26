@@ -63,11 +63,11 @@ const Header = () => {
       >
         <div className="mx-auto max-w-7xl px-6">
           {/* Desktop */}
-          <div className="hidden md:grid grid-cols-[auto_1fr_auto_1fr_auto] items-center gap-4">
+          <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center gap-4 relative">
             <img
               src={hawaiiIsland}
               alt=""
-              className={`w-auto object-contain opacity-60 transition-all duration-500 ${
+              className={`absolute left-0 w-auto object-contain opacity-60 transition-all duration-500 ${
                 scrolled ? "h-12" : "h-16"
               }`}
             />
