@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-16">
           {/* Brand */}
           <div>
-            <img src={hokuLogo} alt="Hoku Insurance" className="h-28 w-auto mb-6" />
+            <img src={hokuLogo} alt="Hoku Insurance" className="h-24 w-auto rounded-lg mb-6" />
             <p className="text-gold-light/60 leading-relaxed">
               Full-service commercial and personal lines Property &amp; Casualty insurance agency serving Hawai'i with aloha.
             </p>
