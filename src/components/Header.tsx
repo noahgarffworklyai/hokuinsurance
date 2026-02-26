@@ -39,7 +39,7 @@ const Header = () => {
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
                 <MapPin className="h-3 w-3" />
-                75-170 Hualalai Rd STE. A100, Kailua-Kona, HI 96740
+                75-170 Hualalai Rd Ste A100, Kailua-Kona, HI 96740
               </span>
             </div>
             <a href="tel:+18085551234" className="flex items-center gap-1.5 hover:text-white transition-colors">
