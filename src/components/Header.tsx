@@ -35,7 +35,7 @@ const Header = () => {
         }`}
       >
         <div className="bg-primary text-primary-foreground">
-          <div className="mx-auto max-w-7xl px-6 py-1.5 flex items-center justify-between text-[11px] tracking-wide">
+          <div className="mx-auto max-w-7xl px-6 py-1.5 flex items-center justify-between text-[12px] font-semibold tracking-wide">
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
                 <MapPin className="h-3 w-3" />
