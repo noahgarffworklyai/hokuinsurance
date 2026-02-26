@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover scale-105" />
+        <img src={heroBg} alt="" className="w-full h-full object-cover object-bottom scale-105" />
         <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/75 to-navy/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
       </div>
