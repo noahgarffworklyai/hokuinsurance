@@ -1,10 +1,12 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import hokuLogo from "@/assets/hoku-logo-new.png";
+import constellation1 from "@/assets/constellation-1.png";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-navy text-gold-light">
-      <div className="container py-20">
+    <footer id="contact" className="bg-navy text-gold-light relative overflow-hidden">
+      <img src={constellation1} alt="" className="absolute top-12 right-12 w-40 opacity-[0.05] pointer-events-none select-none rotate-180" />
+      <div className="container py-20 relative">
         <div className="grid md:grid-cols-3 gap-16">
           {/* Brand */}
           <div>

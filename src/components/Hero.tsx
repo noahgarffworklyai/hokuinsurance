@@ -1,4 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
+import constellation1 from "@/assets/constellation-1.png";
 
 const Hero = () => {
   return (
@@ -13,6 +14,7 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-slate-blue/10 rounded-full blur-3xl" />
+      <img src={constellation1} alt="" className="absolute top-16 right-8 w-64 lg:w-80 opacity-[0.07] pointer-events-none select-none" />
 
       {/* Content */}
       <div className="container relative z-10 pt-40 pb-28">
