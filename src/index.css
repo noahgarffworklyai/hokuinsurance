@@ -6,14 +6,14 @@
 
 @layer base {
   :root {
-    --background: 195 15% 96%;
-    --foreground: 195 50% 15%;
+    --background: 0 0% 100%;
+    --foreground: 210 20% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 195 50% 15%;
+    --card-foreground: 210 20% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 195 50% 15%;
+    --popover-foreground: 210 20% 16%;
 
     --primary: 195 55% 28%;
     --primary-foreground: 38 45% 62%;
@@ -21,8 +21,8 @@
     --secondary: 185 30% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 195 12% 93%;
-    --muted-foreground: 195 15% 40%;
+    --muted: 210 14% 96%;
+    --muted-foreground: 210 10% 46%;
 
     --accent: 38 45% 62%;
     --accent-foreground: 195 55% 15%;
@@ -30,11 +30,11 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 195 12% 88%;
-    --input: 195 12% 85%;
+    --border: 210 14% 91%;
+    --input: 210 14% 85%;
     --ring: 185 30% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --navy: 195 55% 28%;
     --navy-light: 195 45% 35%;
@@ -96,10 +96,10 @@
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
   .gradient-gold {
-    background: linear-gradient(135deg, hsl(38 45% 58%), hsl(40 40% 72%));
+    background: linear-gradient(135deg, hsl(38 45% 58%), hsl(40 40% 68%));
   }
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(38 45% 58%), hsl(40 40% 72%));
+    background: linear-gradient(135deg, hsl(38 45% 58%), hsl(40 40% 68%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
