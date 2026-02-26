@@ -55,10 +55,10 @@ const Header = () => {
 
       {/* Main nav */}
       <div
-        className={`transition-all duration-500 backdrop-blur-md ${
+        className={`transition-all duration-500 ${
           scrolled
-            ? "bg-white/90 shadow-[0_1px_20px_rgba(0,0,0,0.06)]"
-            : "bg-white/80"
+            ? "backdrop-blur-md bg-white/90 shadow-[0_1px_20px_rgba(0,0,0,0.06)]"
+            : "bg-white"
         }`}
       >
         <div className="mx-auto max-w-7xl px-6">
