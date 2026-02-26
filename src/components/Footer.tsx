@@ -5,14 +5,19 @@ import constellation1 from "@/assets/constellation-1.png";
 const Footer = () => {
   return (
     <footer id="contact" className="bg-navy text-gold-light relative overflow-hidden">
-      <img src={constellation1} alt="" className="absolute top-12 right-12 w-48 opacity-[0.1] pointer-events-none select-none rotate-180" />
+      <img
+        src={constellation1}
+        alt=""
+        className="absolute top-12 right-12 w-48 opacity-[0.1] pointer-events-none select-none rotate-180"
+      />
       <div className="container py-20 relative">
         <div className="grid md:grid-cols-3 gap-16">
           {/* Brand */}
           <div>
             <img src={hokuLogo} alt="Hoku Insurance" className="h-28 w-auto mb-6" />
             <p className="text-gold-light/60 leading-relaxed">
-              Full-service commercial and personal lines Property &amp; Casualty insurance agency serving Hawai'i with aloha.
+              Full-service commercial and personal lines Property &amp; Casualty insurance agency serving Hawai'i with
+              aloha.
             </p>
           </div>
 
@@ -40,7 +45,8 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-gold mt-0.5 flex-shrink-0" />
                 <span className="text-gold-light/60">
-                  75-170 Hualalai Road A100<br />
+                  75-170 Hualalai Road A100
+                  <br />
                   Kailua-Kona, HI 96740
                 </span>
               </li>
@@ -52,8 +58,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-gold flex-shrink-0" />
-                <a href="mailto:info@hokuinsurance.com" className="text-gold-light/60 hover:text-gold transition-colors">
-                  info@hokuinsurance.com
+                <a
+                  href="mailto:info@hokuinsurance.com"
+                  className="text-gold-light/60 hover:text-gold transition-colors"
+                >
+                  info@hokuins.com
                 </a>
               </li>
             </ul>
