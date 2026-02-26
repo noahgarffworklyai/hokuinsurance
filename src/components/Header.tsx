@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MapPin, Phone } from "lucide-react";
 import hokuLogo from "@/assets/hoku-logo-new.png";
+import hawaiiIsland from "@/assets/hawaii-island-stars.png";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -55,10 +56,24 @@ const Header = () => {
             : "bg-white"
         }`}
       >
-        <div className="container">
+        <div className="mx-auto max-w-7xl px-6">
           {/* Desktop */}
-          <div className="hidden md:flex items-center justify-between">
-            <nav className="flex items-center gap-8">
+          <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center gap-4 relative">
+            <img
+              src={hawaiiIsland}
+              alt=""
+              className={`absolute left-0 w-auto object-contain opacity-50 transition-all duration-300 ${
+                scrolled ? "h-12" : "h-16"
+              }`}
+            />
+            <a
+              href="#contact"
+              className="absolute right-0 gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300"
+            >
+              Get a Quote
+            </a>
+
+            <nav className="flex items-center justify-end gap-8">
               {leftLinks.map((l) => (
                 <a key={l.label} href={l.href} className={linkClass}>
                   {l.label}
@@ -70,25 +85,17 @@ const Header = () => {
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
-                className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-[60px]" : "h-[80px]"}`}
+                className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-[65px]" : "h-[85px]"}`}
               />
             </a>
 
-            <div className="flex items-center gap-8">
-              <nav className="flex items-center gap-8">
-                {rightLinks.map((l) => (
-                  <a key={l.label} href={l.href} className={linkClass}>
-                    {l.label}
-                  </a>
-                ))}
-              </nav>
-              <a
-                href="#contact"
-                className="gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300"
-              >
-                Get a Quote
-              </a>
-            </div>
+            <nav className="flex items-center justify-start gap-8">
+              {rightLinks.map((l) => (
+                <a key={l.label} href={l.href} className={linkClass}>
+                  {l.label}
+                </a>
+              ))}
+            </nav>
           </div>
 
           {/* Mobile */}
