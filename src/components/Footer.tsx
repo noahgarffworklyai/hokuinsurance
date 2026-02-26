@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
-import hokuLogo from "@/assets/hoku-logo.png";
+import hokuLogo from "@/assets/hoku-logo-new.png";
 
 const Footer = () => {
   return (

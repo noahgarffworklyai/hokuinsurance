@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    --background: 220 20% 96%;
-    --foreground: 220 50% 12%;
+    --background: 195 15% 96%;
+    --foreground: 195 50% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 50% 12%;
+    --card-foreground: 195 50% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 50% 12%;
+    --popover-foreground: 195 50% 15%;
 
-    --primary: 220 55% 13%;
-    --primary-foreground: 42 65% 55%;
+    --primary: 195 55% 28%;
+    --primary-foreground: 38 45% 62%;
 
-    --secondary: 210 30% 55%;
+    --secondary: 185 30% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 93%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 195 12% 93%;
+    --muted-foreground: 195 15% 40%;
 
-    --accent: 42 70% 50%;
-    --accent-foreground: 220 55% 10%;
+    --accent: 38 45% 62%;
+    --accent-foreground: 195 55% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 88%;
-    --ring: 210 30% 55%;
+    --border: 195 12% 88%;
+    --input: 195 12% 85%;
+    --ring: 185 30% 45%;
 
     --radius: 0.75rem;
 
-    --navy: 220 55% 13%;
-    --navy-light: 220 45% 20%;
-    --gold: 42 70% 50%;
-    --gold-light: 42 55% 65%;
-    --slate-blue: 210 30% 55%;
-    --slate-blue-light: 210 25% 68%;
-    --ocean: 200 50% 35%;
+    --navy: 195 55% 28%;
+    --navy-light: 195 45% 35%;
+    --gold: 38 45% 62%;
+    --gold-light: 40 40% 72%;
+    --slate-blue: 185 30% 45%;
+    --slate-blue-light: 185 25% 58%;
+    --ocean: 195 50% 35%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -55,25 +55,25 @@
   }
 
   .dark {
-    --background: 220 55% 8%;
-    --foreground: 210 40% 98%;
-    --card: 220 50% 12%;
-    --card-foreground: 210 40% 98%;
-    --popover: 220 50% 12%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 42 70% 50%;
-    --primary-foreground: 220 55% 10%;
-    --secondary: 210 30% 55%;
+    --background: 195 50% 8%;
+    --foreground: 195 20% 95%;
+    --card: 195 50% 12%;
+    --card-foreground: 195 20% 95%;
+    --popover: 195 50% 12%;
+    --popover-foreground: 195 20% 95%;
+    --primary: 38 45% 62%;
+    --primary-foreground: 195 55% 15%;
+    --secondary: 185 30% 45%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 220 40% 16%;
-    --muted-foreground: 220 15% 65%;
-    --accent: 42 70% 50%;
-    --accent-foreground: 220 55% 10%;
+    --muted: 195 40% 16%;
+    --muted-foreground: 195 15% 65%;
+    --accent: 38 45% 62%;
+    --accent-foreground: 195 55% 15%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 220 30% 20%;
-    --input: 220 30% 20%;
-    --ring: 210 30% 55%;
+    --destructive-foreground: 195 20% 95%;
+    --border: 195 30% 20%;
+    --input: 195 30% 20%;
+    --ring: 185 30% 45%;
   }
 }
 
@@ -96,10 +96,10 @@
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
   .gradient-gold {
-    background: linear-gradient(135deg, hsl(42 70% 50%), hsl(42 55% 65%));
+    background: linear-gradient(135deg, hsl(38 45% 58%), hsl(40 40% 72%));
   }
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(42 70% 50%), hsl(42 55% 65%));
+    background: linear-gradient(135deg, hsl(38 45% 58%), hsl(40 40% 72%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -115,7 +115,7 @@
     background: linear-gradient(
       110deg,
       transparent 25%,
-      hsl(42 70% 50% / 0.08) 50%,
+      hsl(38 45% 62% / 0.08) 50%,
       transparent 75%
     );
     animation: shimmer 3s ease-in-out infinite;

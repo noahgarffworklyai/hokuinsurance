@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MapPin } from "lucide-react";
-import hokuLogo from "@/assets/hoku-logo.png";
+import hokuLogo from "@/assets/hoku-logo-new.png";
 
 const navItems = [
   { label: "Solutions", href: "#solutions" },
