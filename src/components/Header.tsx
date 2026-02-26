@@ -39,13 +39,10 @@ const Header = () => {
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
                 <MapPin className="h-3 w-3" />
-                75-170 Hualalai Rd A100, Kailua-Kona, HI 96740
+                75-170 Hualalai Rd STE. A100, Kailua-Kona, HI 96740
               </span>
             </div>
-            <a
-              href="tel:+18085551234"
-              className="flex items-center gap-1.5 hover:text-white transition-colors"
-            >
+            <a href="tel:+18085551234" className="flex items-center gap-1.5 hover:text-white transition-colors">
               <Phone className="h-3 w-3" />
               (808) 555-1234
             </a>
@@ -56,9 +53,7 @@ const Header = () => {
       {/* Main nav */}
       <div
         className={`transition-all duration-500 ${
-          scrolled
-            ? "backdrop-blur-md bg-white/90 shadow-[0_1px_20px_rgba(0,0,0,0.06)]"
-            : "bg-white"
+          scrolled ? "backdrop-blur-md bg-white/90 shadow-[0_1px_20px_rgba(0,0,0,0.06)]" : "bg-white"
         }`}
       >
         <div className="mx-auto max-w-7xl px-6">
@@ -89,9 +84,7 @@ const Header = () => {
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
-                className={`w-auto object-contain transition-all duration-500 ${
-                  scrolled ? "h-[72px]" : "h-[100px]"
-                }`}
+                className={`w-auto object-contain transition-all duration-500 ${scrolled ? "h-[72px]" : "h-[100px]"}`}
               />
             </a>
 
@@ -110,9 +103,7 @@ const Header = () => {
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
-                className={`w-auto object-contain transition-all duration-500 ${
-                  scrolled ? "h-[56px]" : "h-[72px]"
-                }`}
+                className={`w-auto object-contain transition-all duration-500 ${scrolled ? "h-[56px]" : "h-[72px]"}`}
               />
             </a>
             <button
