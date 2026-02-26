@@ -39,7 +39,7 @@ const Services = () => {
     <section id="solutions" className="py-24 lg:py-32 bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -translate-y-1/2" />
-      <img src={constellation2} alt="" className="absolute bottom-12 left-8 w-56 lg:w-72 opacity-[0.05] pointer-events-none select-none" />
+      <img src={constellation2} alt="" className="absolute bottom-12 left-8 w-64 lg:w-80 opacity-[0.08] pointer-events-none select-none" />
 
       <div className="container relative">
         <div className="text-center mb-20">
