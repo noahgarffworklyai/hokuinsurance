@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MapPin, Phone } from "lucide-react";
 import hokuLogo from "@/assets/hoku-logo-new.png";
+import hawaiiIsland from "@/assets/hawaii-island.png";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -62,7 +63,14 @@ const Header = () => {
       >
         <div className="mx-auto max-w-7xl px-6">
           {/* Desktop */}
-          <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+          <div className="hidden md:grid grid-cols-[auto_1fr_auto_1fr_auto] items-center gap-4">
+            <img
+              src={hawaiiIsland}
+              alt=""
+              className={`w-auto object-contain opacity-60 transition-all duration-500 ${
+                scrolled ? "h-8" : "h-10"
+              }`}
+            />
             <nav className="flex items-center justify-end gap-8">
               {leftLinks.map((l) => (
                 <a key={l.label} href={l.href} className={linkClass}>
