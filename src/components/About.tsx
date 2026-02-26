@@ -1,5 +1,4 @@
 import { CheckCircle } from "lucide-react";
-import hawaiiIsland from "@/assets/hawaii-island.png";
 
 const highlights = [
   "Full-service commercial & personal P&C agency",
@@ -11,49 +10,42 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 lg:py-32 bg-navy text-gold-light relative overflow-hidden">
-      {/* Decorative blurs */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-slate-blue/10 rounded-full blur-3xl" />
-      <img src={hawaiiIsland} alt="" className="absolute bottom-8 right-8 w-56 lg:w-72 opacity-[0.12] pointer-events-none select-none" />
-
+    <section id="about" className="py-24 lg:py-32 bg-primary relative overflow-hidden">
       <div className="container relative">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-secondary mb-4">About Hoku</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-8">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-secondary-foreground/60 mb-3">About Hoku</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-6 text-white">
               Guided by the Stars,{" "}
               <span className="text-gradient-gold">Rooted in Aloha</span>
             </h2>
-            <p className="text-gold-light/70 text-lg leading-relaxed mb-6">
+            <p className="text-white/65 leading-relaxed mb-4">
               Hoku — meaning "star" in Hawaiian — reflects our commitment to being a guiding light for our clients. 
               As a locally owned insurance agency in Kailua-Kona, we understand the unique needs of Hawai'i's 
               businesses and families.
             </p>
-            <p className="text-gold-light/70 text-lg leading-relaxed mb-10">
+            <p className="text-white/65 leading-relaxed mb-8">
               Through our sister company, we also provide comprehensive Administrative Services Organization (ASO) 
               solutions, helping businesses streamline payroll, HR, and compliance — all under one roof.
             </p>
 
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {highlights.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-gold mt-0.5 flex-shrink-0" />
-                  <span className="text-gold-light/80">{item}</span>
+                <li key={item} className="flex items-center gap-3">
+                  <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
+                  <span className="text-white/80 text-sm">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="relative">
-            <div className="glass rounded-3xl p-10 lg:p-14">
-              <blockquote className="text-2xl sm:text-3xl font-heading italic text-gold-light/90 leading-relaxed">
+            <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-lg p-10 lg:p-12">
+              <blockquote className="text-xl sm:text-2xl font-heading italic text-white/90 leading-relaxed">
                 "We don't just sell policies — we build lasting relationships that protect what matters most."
               </blockquote>
-              <div className="mt-8 flex items-center gap-4">
-                <div className="h-px flex-1 bg-gold/20" />
-                <span className="text-sm tracking-[0.2em] uppercase text-gold/50 font-medium">Hoku Insurance</span>
-                <div className="h-px flex-1 bg-gold/20" />
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <span className="text-[12px] tracking-[0.2em] uppercase text-accent font-semibold">Hoku Insurance</span>
               </div>
             </div>
           </div>

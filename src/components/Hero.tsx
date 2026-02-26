@@ -1,45 +1,39 @@
+import { ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import constellation1 from "@/assets/constellation-1.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover object-bottom scale-105" />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/75 to-navy/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
+        <img src={heroBg} alt="" className="w-full h-full object-cover object-bottom" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(195_55%_14%/0.92)] via-[hsl(195_55%_18%/0.82)] to-[hsl(195_55%_22%/0.65)]" />
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-slate-blue/10 rounded-full blur-3xl" />
-      <img src={constellation1} alt="" className="absolute top-24 right-12 w-72 lg:w-96 opacity-[0.15] pointer-events-none select-none" />
-
       {/* Content */}
-      <div className="container relative z-10 pt-40 pb-28">
-        <div className="max-w-3xl animate-fade-in-up">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-8">
-            <span className="text-gold-light">Protecting What</span>
-            <br />
-            <span className="text-gradient-gold">Matters Most</span>
-            <br />
-            <span className="text-gold-light/70">in Hawai'i</span>
+      <div className="container relative z-10 pt-36 pb-24">
+        <div className="max-w-2xl animate-fade-in-up">
+          <p className="text-sm font-semibold tracking-[0.25em] uppercase text-gold mb-6">
+            Hawai'i's Trusted Insurance Partner
+          </p>
+          <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold leading-[1.15] mb-8 text-white">
+            Protecting What Matters Most in Hawai'i.
           </h1>
-          <p className="text-lg sm:text-xl text-slate-blue-light font-body leading-relaxed mb-10 max-w-xl">
+          <p className="text-lg text-white/70 font-body leading-relaxed mb-10 max-w-lg">
             Full-service commercial and personal lines Property &amp; Casualty insurance, 
             backed by local expertise and genuine aloha.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="gradient-gold text-accent-foreground px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-full hover:shadow-xl hover:shadow-gold/25 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 hover:-translate-y-0.5"
             >
               Talk to an Expert
+              <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="#solutions"
-              className="glass text-gold-light px-8 py-4 text-sm font-semibold tracking-wider uppercase rounded-full hover:bg-white/10 transition-all duration-300"
+              className="inline-flex items-center gap-2 border border-white/25 text-white/90 px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:bg-white/10 transition-all duration-300"
             >
               Our Solutions
             </a>
