@@ -1,13 +1,29 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Menu, X, MapPin, Phone, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import hokuLogo from "@/assets/hoku-logo-new.png";
 import hawaiiIsland from "@/assets/hawaii-island-stars.png";
 
+// Service page hero images — prefetched on Solutions hover
+import businessTeam from "@/assets/business-team.jpg";
+import hawaiiHome from "@/assets/hawaii-home.jpg";
+import hawaiiProperty from "@/assets/hawaii-property.jpg";
+import riskStrategy from "@/assets/risk-strategy.jpg";
+import hawaiiBeach from "@/assets/hawaii-beach.jpg";
+import teamMeeting from "@/assets/team-meeting.jpg";
+
 // Preload images so they render instantly on navigation
 const preload = (src: string) => { const img = new Image(); img.src = src; };
 preload(hokuLogo);
 preload(hawaiiIsland);
+
+const heroImages = [businessTeam, hawaiiHome, hawaiiProperty, riskStrategy, hawaiiBeach, teamMeeting];
+let heroImagesPreloaded = false;
+const preloadHeroImages = () => {
+  if (heroImagesPreloaded) return;
+  heroImagesPreloaded = true;
+  heroImages.forEach(preload);
+};
 
 interface NavItem {
   label: string;
@@ -30,6 +46,7 @@ const Header = () => {
   const handleMouseEnter = (label: string) => {
     if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current);
     setOpenDropdown(label);
+    if (label === "Solutions") preloadHeroImages();
   };
 
   const handleMouseLeave = () => {
@@ -188,7 +205,10 @@ const Header = () => {
                 {l.children ? (
                   <>
                     <button
-                      onClick={() => setMobileExpanded(mobileExpanded === l.label ? null : l.label)}
+                      onClick={() => {
+                        setMobileExpanded(mobileExpanded === l.label ? null : l.label);
+                        if (l.label === "Solutions") preloadHeroImages();
+                      }}
                       className="flex items-center justify-between w-full py-2.5 text-sm font-medium tracking-wider uppercase text-foreground/50 hover:text-primary transition-colors"
                     >
                       {l.label}
