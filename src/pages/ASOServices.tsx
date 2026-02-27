@@ -1,5 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { DollarSign, Briefcase, ClipboardCheck, Users, ShieldCheck, MapPin, TrendingUp, Link2 } from "lucide-react";
+import teamMeeting from "@/assets/team-meeting.jpg";
 
 const services = [
   { icon: DollarSign, title: "Precise Payroll Processing", desc: "We handle the end-to-end payroll cycle, including direct deposits, tax withholdings, and the filing of state and federal payroll taxes. We ensure your team is paid accurately and on time, every time." },
@@ -17,7 +18,7 @@ const advantages = [
 
 const ASOServicesPage = () => {
   return (
-    <ServicePageLayout title="Administrative Services Organization (ASO): Streamlining Your Success" subtitle="Sister Company">
+    <ServicePageLayout title="Administrative Services Organization (ASO): Streamlining Your Success" subtitle="Sister Company" heroImage={teamMeeting}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         Running a business in Hawaii is rewarding, but the administrative burden can often feel like trekking up Mauna Kea in a gale. Between complex labor laws, payroll taxes, and the ever-changing landscape of HR compliance, many business owners find themselves spending more time on paperwork than on their actual craft. This is where our sister company, Hoku Resources, steps in to light the way. Our sister company provides Administrative Services Organization (ASO) solutions—payroll, HR, compliance, and employee management.
       </p>
