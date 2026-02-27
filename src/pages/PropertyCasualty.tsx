@@ -18,7 +18,7 @@ const casualtyItems = [
 const PropertyCasualty = () => {
   return (
     <ServicePageLayout title="Property & Casualty: Specialized Solutions for Island Life" subtitle="P&C Insurance" heroImage={hawaiiProperty}>
-      <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+      <p className="text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we recognize that living in Hawaii requires a different level of vigilance. Our unique geography—thousands of miles from the nearest continent—creates a beautiful but complex environment for property owners. To truly protect your investments, you need more than a standard policy; you need specialized P&C solutions that account for the unique risks of island living, from natural disasters to liability.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-12">
@@ -66,7 +66,7 @@ const PropertyCasualty = () => {
       <div className="bg-primary rounded-lg p-8 lg:p-10">
         <h2 className="text-2xl font-heading font-bold text-white mb-4">Why the "Hoku" Way Matters</h2>
         <p className="text-white/70 leading-relaxed mb-6">
-          The word Hoku refers to a star—a point of navigation. In a 2026 insurance market characterized by rising premiums and retreating carriers, we act as your Hōkūleʻa Star. As an independent agency, we have the local relationships and market access to find stable, high-quality coverage when the "big name" insurers pull back. We take a consultative, hands-on approach to ensure you aren't just paying a premium, but actually securing your legacy.
+          The word Hoku refers to a star—a point of navigation. In a 2026 insurance market characterized by rising premiums and retreating carriers, we act as your Hokuleʻa Star. As an independent agency, we have the local relationships and market access to find stable, high-quality coverage when the "big name" insurers pull back. We take a consultative, hands-on approach to ensure you aren't just paying a premium, but actually securing your legacy.
         </p>
         <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
           Get a Quote

@@ -43,7 +43,7 @@ const AboutPage = () => {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 Hoku — meaning "star" in Hawaiian — reflects our commitment to being a guiding light for our clients.
                 As a locally owned insurance agency in Kailua-Kona, we understand the unique needs of Hawaii's
                 businesses and families.
@@ -77,7 +77,7 @@ const AboutPage = () => {
                     Principal & Co-Founder
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Elizabeth is a co-owner and General Manager of Hoku Insurance, where she focuses on delivering personalized, high-touch service to clients across the islands. With a background rooted in strategic management and a passion for community-based business, Elizabeth recognized a vital need for a more consultative insurance experience in Hawaii. Her leadership is defined by a commitment to transparency and building long-term partnerships. Alongside Jeff, Liz ensures that Hoku Insurance acts as a true "Hōkūleʻa Star" for its clients, providing specialized solutions that protect both the personal assets and the professional legacies of the local community.
+                    Elizabeth is a co-owner and General Manager of Hoku Insurance, where she focuses on delivering personalized, high-touch service to clients across the islands. With a background rooted in strategic management and a passion for community-based business, Elizabeth recognized a vital need for a more consultative insurance experience in Hawaii. Her leadership is defined by a commitment to transparency and building long-term partnerships. Alongside Jeff, Liz ensures that Hoku Insurance acts as a true "Hokuleʻa Star" for its clients, providing specialized solutions that protect both the personal assets and the professional legacies of the local community.
                   </p>
                 </div>
 

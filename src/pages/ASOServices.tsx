@@ -13,13 +13,13 @@ const advantages = [
   { icon: ShieldCheck, title: "Retain Total Control", desc: "Unlike a PEO (Professional Employer Organization), which uses a co-employment model, an ASO leaves you as the sole employer of record. You keep your own federal tax ID and complete autonomy over your hiring decisions, while we act as your expert administrative arm." },
   { icon: MapPin, title: "Local Expertise for Local Laws", desc: "Hawaii has some of the most unique and stringent labor laws in the nation. Hoku Resources is staffed by professionals who live and work here. We understand the nuances of the Hawaii Prepaid Healthcare Act and local labor nuances that mainland providers often overlook." },
   { icon: TrendingUp, title: "Cost-Effective Scalability", desc: "Hiring a full-time HR Director, a Payroll Specialist, and a Compliance Officer is financially out of reach for many small to mid-sized firms. Hoku Resources gives you access to a full team of specialists for a fraction of the cost of one executive salary." },
-  { icon: Link2, title: "Integrated Synergy with Hoku Insurance", desc: "Because Hoku Resources is our sister company, there is a seamless \"Hōkūleʻa Star\" alignment between your insurance needs and your workforce management. We can coordinate workers' comp claims data and benefits administration with precision, reducing data silos and administrative friction." },
+  { icon: Link2, title: "Integrated Synergy with Hoku Insurance", desc: "Because Hoku Resources is our sister company, there is a seamless \"Hokuleʻa Star\" alignment between your insurance needs and your workforce management. We can coordinate workers' comp claims data and benefits administration with precision, reducing data silos and administrative friction." },
 ];
 
 const ASOServicesPage = () => {
   return (
     <ServicePageLayout title="Administrative Services Organization (ASO): Streamlining Your Success" subtitle="Sister Company" heroImage={teamMeeting}>
-      <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+      <p className="text-muted-foreground leading-relaxed mb-6">
         Running a business in Hawaii is rewarding, but the administrative burden can often feel like trekking up Mauna Kea in a gale. Between complex labor laws, payroll taxes, and the ever-changing landscape of HR compliance, many business owners find themselves spending more time on paperwork than on their actual craft. This is where our sister company, Hoku Resources, steps in to light the way. Our sister company provides Administrative Services Organization (ASO) solutions—payroll, HR, compliance, and employee management.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-12">

@@ -20,7 +20,7 @@ const advantages = [
 const PersonalLines = () => {
   return (
     <ServicePageLayout title="Personal Insurance: Protecting What Matters Most in Hawaii" subtitle="Personal Lines" heroImage={hawaiiHome}>
-      <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+      <p className="text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we understand that your home, your car, and your personal possessions represent more than just financial investments—they are the foundation of your life here in the islands. Living in Hawaii brings unique joys, from the North Shore swells to the quiet beauty of upcountry living, but it also brings unique risks. That is why we are committed to helping you protect your home, auto, and personal assets with tailored policies designed for Hawaii residents.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-12">
@@ -65,7 +65,7 @@ const PersonalLines = () => {
       <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
         <h2 className="text-2xl font-heading font-bold text-white mb-4">Secure Your Peace of Mind</h2>
         <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-          Let us help you navigate the complexities of personal insurance with the "Hōkūleʻa Star" guidance you deserve. At Hoku Insurance, we are proud to protect the families and the future of Hawaii.
+          Let us help you navigate the complexities of personal insurance with the "Hokuleʻa Star" guidance you deserve. At Hoku Insurance, we are proud to protect the families and the future of Hawaii.
         </p>
         <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
           Get a Quote

@@ -19,11 +19,11 @@ const differences = [
 const ClaimsSupport = () => {
   return (
     <ServicePageLayout title="Claims Support: Your Advocate in the Moments That Matter" subtitle="Claims Support" heroImage={hawaiiBeach}>
-      <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+      <p className="text-muted-foreground leading-relaxed mb-6">
         When the unexpected happens, the value of an insurance policy is no longer found in the fine print of a contract—it is found in the quality of the support you receive. At Hoku Insurance, we understand that filing a claim can be one of the most stressful experiences for any business owner or resident. That is why we provide dedicated local claims advocacy to guide you through the process and ensure fair, timely resolution.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-12">
-        In a world of automated phone trees and mainland call centers, Hoku Insurance stands apart by offering a human-centric, "Hōkūleʻa Star" approach to claims. We don't just hand you a carrier's 1-800 number and wish you luck; we step into the arena with you, acting as your professional advocate from the initial report to the final settlement.
+        In a world of automated phone trees and mainland call centers, Hoku Insurance stands apart by offering a human-centric, "Hokuleʻa Star" approach to claims. We don't just hand you a carrier's 1-800 number and wish you luck; we step into the arena with you, acting as your professional advocate from the initial report to the final settlement.
       </p>
 
       <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-4">
