@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import hawaiiBeach from "@/assets/hawaii-beach.jpg";
+import hawaiiCliffs from "@/assets/hawaii-cliffs.jpg";
 
 const highlights = [
   "Full-service commercial & personal P&C agency",
@@ -20,7 +20,7 @@ const AboutPage = () => {
       <main>
         {/* Hero Banner */}
         <section className="bg-primary pt-36 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
-          <img src={hawaiiBeach} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+          <img src={hawaiiCliffs} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-br from-[hsl(195_55%_22%)] to-[hsl(195_55%_32%)] opacity-50" />
           <div className="container relative z-10">
             <Link
