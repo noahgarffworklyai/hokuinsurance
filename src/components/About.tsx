@@ -17,7 +17,7 @@ const About = () => {
           <div>
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-secondary-foreground/60 mb-3">About Hoku</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-6 text-white">
-              Guided by the Stars,{" "}
+              Guided by Respect,{" "}
               <span className="text-gradient-gold">Rooted in Aloha</span>
             </h2>
             <p className="text-white/65 leading-relaxed mb-4">

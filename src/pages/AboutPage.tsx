@@ -32,7 +32,7 @@ const AboutPage = () => {
             </Link>
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-accent mb-3">About Hoku</p>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-tight max-w-3xl">
-              Guided by the Stars,{" "}
+              Guided by Respect,{" "}
               <span className="text-gradient-gold">Rooted in Aloha</span>
             </h1>
             <div className="w-16 h-[2px] gradient-gold mt-6 rounded-full" />
