@@ -65,7 +65,7 @@ const PersonalLines = () => {
       <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
         <h2 className="text-2xl font-heading font-bold text-white mb-4">Secure Your Peace of Mind</h2>
         <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-          Let us help you navigate the complexities of personal insurance with the "Hokulea Star" guidance you deserve. At Hoku Insurance, we are proud to protect the families and the future of Hawaii.
+          Let us help you navigate the complexities of personal insurance with the "Hōkūleʻa Star" guidance you deserve. At Hoku Insurance, we are proud to protect the families and the future of Hawaii.
         </p>
         <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
           Get a Quote
