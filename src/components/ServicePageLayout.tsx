@@ -1,6 +1,5 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -12,16 +11,6 @@ interface ServicePageLayoutProps {
 }
 
 const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePageLayoutProps) => {
-  useEffect(() => {
-    if (heroImage) {
-      const link = document.createElement("link");
-      link.rel = "preload";
-      link.as = "image";
-      link.href = heroImage;
-      document.head.appendChild(link);
-      return () => { document.head.removeChild(link); };
-    }
-  }, [heroImage]);
 
   return (
     <div className="min-h-screen">

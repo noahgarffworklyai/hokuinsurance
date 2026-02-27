@@ -1,14 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
-
-// Preload hero image immediately
-const preloadLink = document.createElement("link");
-preloadLink.rel = "preload";
-preloadLink.as = "image";
-preloadLink.href = heroBg;
-document.head.appendChild(preloadLink);
 
 const Hero = () => {
   return (
