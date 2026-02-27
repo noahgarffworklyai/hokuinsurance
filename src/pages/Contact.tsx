@@ -141,7 +141,7 @@ const Contact = () => {
                 {/* Google Map */}
                 <div className="rounded-lg overflow-hidden border border-border mt-6">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.770244233384!2d-155.9918784245452!3d19.637117981686444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79540efcf3d363b9%3A0x41b53f1626ed487e!2s75-170%20Hualalai%20Rd%2C%20Kailua-Kona%2C%20HI%2096740!5e0!3m2!1sen!2sus!4v1772159781399!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.7638152817567!2d-155.9889213!3d19.6373927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79540efc932a6fd9%3A0x345c2d61430342!2s75-170%20Hualalai%20Rd%20ste%20a100%2C%20Kailua-Kona%2C%20HI%2096740!5e0!3m2!1sen!2sus!4v1772172884504!5m2!1sen!2sus"
                     width="100%"
                     height="280"
                     style={{ border: 0 }}
