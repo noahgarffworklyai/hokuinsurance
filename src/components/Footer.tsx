@@ -11,7 +11,8 @@ const quickLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-white relative border-t border-border">
+    <footer className="bg-white relative pt-8">
+      <div className="container"><div className="border-t border-border" /></div>
       <div className="container py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
