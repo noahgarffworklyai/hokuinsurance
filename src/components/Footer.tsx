@@ -7,7 +7,6 @@ const quickLinks = [
   { label: "About", href: "/about" },
   { label: "ASO Services", href: "/aso-services" },
   { label: "Contact", href: "/contact" },
-  { label: "Pay Your Bill", href: "/pay-your-bill" },
 ];
 
 const Footer = () => {

@@ -54,7 +54,6 @@ const Header = () => {
   const rightLinks: NavItem[] = [
     { label: "ASO Services", href: "/aso-services" },
     { label: "Contact", href: "/contact" },
-    { label: "Pay Your Bill", href: "/pay-your-bill" },
   ];
 
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
