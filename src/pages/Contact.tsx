@@ -112,7 +112,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground text-sm">Address</p>
-                      <a href="https://www.google.com/maps/search/?api=1&query=75-170+Hualalai+Rd+A100%2C+Kailua-Kona%2C+HI+96740" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">75-170 Hualalai Road A100<br />Kailua-Kona, HI 96740</a>
+                      <a href="https://www.google.com/maps/place/75-170+Hualalai+Rd+Ste+A100,+Kailua-Kona,+HI+96740" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">75-170 Hualalai Rd Ste A100<br />Kailua-Kona, HI 96740</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
