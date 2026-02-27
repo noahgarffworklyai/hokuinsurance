@@ -18,7 +18,7 @@ const whyUs = [
 
 const RiskManagement = () => {
   return (
-    <ServicePageLayout title="Risk Management: Your North Star for Business Resilience" subtitle="Risk Management" heroImage={riskStrategy}>
+    <ServicePageLayout title="Risk Management: Your Hokulea Star for Business Resilience" subtitle="Risk Management" heroImage={riskStrategy}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we believe the most effective insurance policy is the one you never have to use. While traditional insurance reacts after a disaster has struck, true security is built on a foundation of foresight. We partner with you to implement proactive risk assessment and loss prevention strategies to protect your business before claims occur.
       </p>
