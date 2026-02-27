@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import hawaiiCoast from "@/assets/hawaii-coast.jpg";
 
 const highlights = [
   "Full-service commercial & personal P&C agency",
@@ -40,13 +41,18 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-lg p-10 lg:p-12">
-              <blockquote className="text-xl sm:text-2xl font-heading italic text-white/90 leading-relaxed">
-                "We don't just sell policies — we build lasting relationships that protect what matters most."
+            <div className="rounded-lg overflow-hidden shadow-2xl">
+              <img 
+                src={hawaiiCoast} 
+                alt="Beautiful Hawaii coastline at sunset" 
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-white/[0.08] backdrop-blur-sm border border-white/10 rounded-lg px-6 py-4">
+              <blockquote className="text-sm font-heading italic text-white/90 leading-relaxed max-w-[260px]">
+                "We don't just sell policies — we build lasting relationships."
               </blockquote>
-              <div className="mt-6 pt-6 border-t border-white/10">
-                <span className="text-[12px] tracking-[0.2em] uppercase text-accent font-semibold">Hoku Insurance</span>
-              </div>
+              <span className="text-[10px] tracking-[0.2em] uppercase text-accent font-semibold mt-2 block">Hoku Insurance</span>
             </div>
           </div>
         </div>

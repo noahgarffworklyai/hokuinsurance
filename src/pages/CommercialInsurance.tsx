@@ -1,5 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Shield, Building2, Car, HardHat, FileText, Users, TrendingUp, MapPin, Search } from "lucide-react";
+import businessTeam from "@/assets/business-team.jpg";
 
 const offerings = [
   { icon: Shield, title: "General Liability", desc: "Protects your business from financial loss should you be liable for property damage or bodily injury." },
@@ -18,7 +19,7 @@ const reasons = [
 
 const CommercialInsurance = () => {
   return (
-    <ServicePageLayout title="Commercial Insurance: Protecting the Heart of Your Business" subtitle="Insurance Solutions">
+    <ServicePageLayout title="Commercial Insurance: Protecting the Heart of Your Business" subtitle="Insurance Solutions" heroImage={businessTeam}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we believe that your business is more than just a source of income—it is a reflection of your hard work, dedication, and vision for the future. Whether you are a solo entrepreneur starting a boutique in Kailua-Kona or a large-scale operation with teams across the islands, protecting your assets is vital to your long-term success. We provide comprehensive coverage for businesses of all sizes—from general liability and property to workers' compensation and commercial auto.
       </p>

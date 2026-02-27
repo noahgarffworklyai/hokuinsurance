@@ -1,5 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { AlertCircle, FileSearch, MessageCircle, Scale, MapPin, Handshake, Clock, Heart } from "lucide-react";
+import hawaiiBeach from "@/assets/hawaii-beach.jpg";
 
 const stages = [
   { icon: AlertCircle, title: "Immediate Response & Guidance", desc: "From the moment a loss occurs, we are here to advise on the critical first steps—whether that's securing a property from further damage or documenting a liability incident." },
@@ -17,7 +18,7 @@ const differences = [
 
 const ClaimsSupport = () => {
   return (
-    <ServicePageLayout title="Claims Support: Your Advocate in the Moments That Matter" subtitle="Claims Support">
+    <ServicePageLayout title="Claims Support: Your Advocate in the Moments That Matter" subtitle="Claims Support" heroImage={hawaiiBeach}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         When the unexpected happens, the value of an insurance policy is no longer found in the fine print of a contract—it is found in the quality of the support you receive. At Hoku Insurance, we understand that filing a claim can be one of the most stressful experiences for any business owner or resident. That is why we provide dedicated local claims advocacy to guide you through the process and ensure fair, timely resolution.
       </p>

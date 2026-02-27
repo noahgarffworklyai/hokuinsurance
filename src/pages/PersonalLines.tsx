@@ -1,5 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Home, Car, CloudRain, Umbrella, Building, MapPin, Search, Users, Phone } from "lucide-react";
+import hawaiiHome from "@/assets/hawaii-home.jpg";
 
 const coverages = [
   { icon: Home, title: "Homeowners Insurance", desc: "Your home is likely your most significant asset. We offer robust coverage that accounts for Hawaii's specific environmental factors, ensuring your dwelling and personal property are protected against fire, theft, and liability." },
@@ -18,7 +19,7 @@ const advantages = [
 
 const PersonalLines = () => {
   return (
-    <ServicePageLayout title="Personal Insurance: Protecting What Matters Most in Hawaii" subtitle="Personal Lines">
+    <ServicePageLayout title="Personal Insurance: Protecting What Matters Most in Hawaii" subtitle="Personal Lines" heroImage={hawaiiHome}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we understand that your home, your car, and your personal possessions represent more than just financial investments—they are the foundation of your life here in the islands. Living in Hawaii brings unique joys, from the North Shore swells to the quiet beauty of upcountry living, but it also brings unique risks. That is why we are committed to helping you protect your home, auto, and personal assets with tailored policies designed for Hawaii residents.
       </p>
