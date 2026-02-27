@@ -112,7 +112,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground text-sm">Address</p>
-                      <a href="https://maps.google.com/?q=75-170+Hualalai+Rd+Ste+A100,+Kailua-Kona,+HI+96740" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">75-170 Hualalai Road A100<br />Kailua-Kona, HI 96740</a>
+                      <a href="https://maps.app.goo.gl/FwUhkhVtFJsfq3Bo7" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">75-170 Hualalai Road A100<br />Kailua-Kona, HI 96740</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -129,10 +129,6 @@ const Contact = () => {
                       <a href="mailto:info@hokuinsurance.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">info@hokuins.com</a>
                     </div>
                   </div>
-                </div>
-
-                {/* Office Hours */}
-                <div className="bg-card rounded-lg p-8 border border-border">
                   <div className="flex items-start gap-4">
                     <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
