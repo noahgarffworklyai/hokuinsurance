@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { CloudRain, Waves, Mountain, Flame, Shield, Umbrella, Phone } from "lucide-react";
-import propertyKeys from "@/assets/property-keys.jpg";
+import hawaiiProperty from "@/assets/hawaii-property.jpg";
 
 const propertyItems = [
   { icon: CloudRain, title: "Hurricane & Windstorm", desc: "Standard homeowners' insurance often stops where a tropical storm begins. We help you secure dedicated hurricane coverage to protect against high-velocity winds and debris." },
@@ -17,7 +17,7 @@ const casualtyItems = [
 
 const PropertyCasualty = () => {
   return (
-    <ServicePageLayout title="Property & Casualty: Specialized Solutions for Island Life" subtitle="P&C Insurance" heroImage={propertyKeys}>
+    <ServicePageLayout title="Property & Casualty: Specialized Solutions for Island Life" subtitle="P&C Insurance" heroImage={hawaiiProperty}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we recognize that living in Hawaii requires a different level of vigilance. Our unique geography—thousands of miles from the nearest continent—creates a beautiful but complex environment for property owners. To truly protect your investments, you need more than a standard policy; you need specialized P&C solutions that account for the unique risks of island living, from natural disasters to liability.
       </p>
