@@ -46,6 +46,8 @@ const About = () => {
                 src={hawaiiLavaStars} 
                 alt="Hawaii lava flow under starry night sky" 
                 className="w-full h-[400px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="bg-white/[0.08] backdrop-blur-sm border border-white/10 rounded-lg px-6 py-4 mt-4">

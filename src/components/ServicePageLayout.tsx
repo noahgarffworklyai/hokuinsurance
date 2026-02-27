@@ -18,7 +18,7 @@ const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePage
         {/* Hero Banner */}
         <section className="bg-primary pt-36 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
           {heroImage && (
-            <img src={heroImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+            <img src={heroImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" decoding="async" />
           )}
           <div className="absolute inset-0 bg-gradient-to-br from-[hsl(195_55%_22%)] to-[hsl(195_55%_32%)] opacity-50" />
           <div className="container relative z-10">
