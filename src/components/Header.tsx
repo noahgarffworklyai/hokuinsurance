@@ -1,12 +1,20 @@
-import { useState, useEffect } from "react";
-import { Menu, X, MapPin, Phone } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, MapPin, Phone, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import hokuLogo from "@/assets/hoku-logo-new.png";
 import hawaiiIsland from "@/assets/hawaii-island-stars.png";
 
+interface NavItem {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+}
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -14,15 +22,37 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const leftLinks = [
-    { label: "Solutions", href: "/#solutions" },
+  const handleMouseEnter = (label: string) => {
+    if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current);
+    setOpenDropdown(label);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimeout.current = setTimeout(() => setOpenDropdown(null), 150);
+  };
+
+  const leftLinks: NavItem[] = [
+    {
+      label: "Solutions",
+      href: "/#solutions",
+      children: [
+        { label: "Commercial Insurance", href: "/commercial-insurance" },
+        { label: "Personal Lines", href: "/personal-lines" },
+        { label: "Property & Casualty", href: "/property-casualty" },
+        { label: "Risk Management", href: "/risk-management" },
+        { label: "Claims Support", href: "/claims-support" },
+      ],
+    },
     { label: "About", href: "/about" },
   ];
 
-  const rightLinks = [
+  const rightLinks: NavItem[] = [
     { label: "ASO Services", href: "/aso-services" },
     { label: "Contact", href: "/contact" },
+    { label: "Pay Your Bill", href: "/pay-your-bill" },
   ];
+
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   const linkClass =
     "text-[13px] font-medium tracking-[0.15em] uppercase text-foreground/50 hover:text-primary transition-colors duration-200";
@@ -76,9 +106,33 @@ const Header = () => {
 
             <nav className="flex items-center justify-end gap-8">
               {leftLinks.map((l) => (
-                <Link key={l.label} to={l.href} className={linkClass}>
-                  {l.label}
-                </Link>
+                <div
+                  key={l.label}
+                  className="relative"
+                  onMouseEnter={() => l.children && handleMouseEnter(l.label)}
+                  onMouseLeave={l.children ? handleMouseLeave : undefined}
+                >
+                  <Link to={l.href} className={`${linkClass} flex items-center gap-1`}>
+                    {l.label}
+                    {l.children && <ChevronDown className={`h-3 w-3 transition-transform duration-200 ${openDropdown === l.label ? "rotate-180" : ""}`} />}
+                  </Link>
+                  {l.children && openDropdown === l.label && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                      <div className="bg-white rounded-lg shadow-lg border border-border/50 py-2 min-w-[220px]">
+                        {l.children.map((child) => (
+                          <Link
+                            key={child.label}
+                            to={child.href}
+                            onClick={() => setOpenDropdown(null)}
+                            className="block px-4 py-2.5 text-sm text-foreground/70 hover:text-primary hover:bg-primary/5 transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
               ))}
             </nav>
 
@@ -121,19 +175,46 @@ const Header = () => {
         {/* Mobile menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${
-            mobileOpen ? "max-h-96 border-t border-border" : "max-h-0"
+            mobileOpen ? "max-h-[500px] border-t border-border" : "max-h-0"
           }`}
         >
           <nav className="bg-white px-6 py-4 space-y-1">
             {[...leftLinks, ...rightLinks].map((l) => (
-              <Link
-                key={l.label}
-                to={l.href}
-                onClick={() => setMobileOpen(false)}
-                className="block py-2.5 text-sm font-medium tracking-wider uppercase text-foreground/50 hover:text-primary transition-colors"
-              >
-                {l.label}
-              </Link>
+              <div key={l.label}>
+                {l.children ? (
+                  <>
+                    <button
+                      onClick={() => setMobileExpanded(mobileExpanded === l.label ? null : l.label)}
+                      className="flex items-center justify-between w-full py-2.5 text-sm font-medium tracking-wider uppercase text-foreground/50 hover:text-primary transition-colors"
+                    >
+                      {l.label}
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileExpanded === l.label ? "rotate-180" : ""}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-200 ${mobileExpanded === l.label ? "max-h-96" : "max-h-0"}`}>
+                      <div className="pl-4 pb-2 space-y-1">
+                        {l.children.map((child) => (
+                          <Link
+                            key={child.label}
+                            to={child.href}
+                            onClick={() => { setMobileOpen(false); setMobileExpanded(null); }}
+                            className="block py-2 text-sm text-foreground/60 hover:text-primary transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <Link
+                    to={l.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block py-2.5 text-sm font-medium tracking-wider uppercase text-foreground/50 hover:text-primary transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                )}
+              </div>
             ))}
             <Link
               to="/contact"
