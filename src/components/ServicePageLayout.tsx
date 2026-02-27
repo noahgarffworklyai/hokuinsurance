@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -11,6 +12,17 @@ interface ServicePageLayoutProps {
 }
 
 const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePageLayoutProps) => {
+  useEffect(() => {
+    if (heroImage) {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = heroImage;
+      document.head.appendChild(link);
+      return () => { document.head.removeChild(link); };
+    }
+  }, [heroImage]);
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -18,7 +30,7 @@ const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePage
         {/* Hero Banner */}
         <section className="bg-primary pt-36 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
           {heroImage && (
-            <img src={heroImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+            <img src={heroImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" fetchPriority="high" />
           )}
           <div className="absolute inset-0 bg-gradient-to-br from-[hsl(195_55%_22%)] to-[hsl(195_55%_32%)] opacity-50" />
           <div className="container relative z-10">
