@@ -40,16 +40,16 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="relative">
+          <div>
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <img 
                 src={hawaiiLavaStars} 
-                alt="Beautiful Hawaii coastline at sunset" 
+                alt="Hawaii lava flow under starry night sky" 
                 className="w-full h-[400px] object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-white/[0.08] backdrop-blur-sm border border-white/10 rounded-lg px-6 py-4">
-              <blockquote className="text-sm font-heading italic text-white/90 leading-relaxed max-w-[260px]">
+            <div className="bg-white/[0.08] backdrop-blur-sm border border-white/10 rounded-lg px-6 py-4 mt-4">
+              <blockquote className="text-sm font-heading italic text-white/90 leading-relaxed">
                 "We don't just sell policies — we build lasting relationships."
               </blockquote>
               <span className="text-[10px] tracking-[0.2em] uppercase text-accent font-semibold mt-2 block">Hoku Insurance</span>
