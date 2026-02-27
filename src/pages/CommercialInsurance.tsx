@@ -20,7 +20,7 @@ const reasons = [
 const CommercialInsurance = () => {
   return (
     <ServicePageLayout title="Commercial Insurance: Protecting the Heart of Your Business" subtitle="Insurance Solutions" heroImage={businessTeam}>
-      <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+      <p className="text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we believe that your business is more than just a source of income—it is a reflection of your hard work, dedication, and vision for the future. Whether you are a solo entrepreneur starting a boutique in Kailua-Kona or a large-scale operation with teams across the islands, protecting your assets is vital to your long-term success. We provide comprehensive coverage for businesses of all sizes—from general liability and property to workers' compensation and commercial auto.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-12">
@@ -65,7 +65,7 @@ const CommercialInsurance = () => {
       <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
         <h2 className="text-2xl font-heading font-bold text-white mb-4">Secure Your Legacy Today</h2>
         <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-          Don't leave the future of your business to chance. Let the experts at Hoku Insurance provide the "Hōkūleʻa Star" guidance you need to navigate your commercial insurance options with confidence.
+          Don't leave the future of your business to chance. Let the experts at Hoku Insurance provide the "Hokuleʻa Star" guidance you need to navigate your commercial insurance options with confidence.
         </p>
         <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
           Get a Quote
