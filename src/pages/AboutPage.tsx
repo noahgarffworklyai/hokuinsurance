@@ -77,7 +77,7 @@ const AboutPage = () => {
                     Principal & Co-Founder
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Elizabeth is a co-owner and General Manager of Hoku Insurance, where she focuses on delivering personalized, high-touch service to clients across the islands. With a background rooted in strategic management and a passion for community-based business, Elizabeth recognized a vital need for a more consultative insurance experience in Hawaii. Her leadership is defined by a commitment to transparency and building long-term partnerships. Alongside Jeff, Liz ensures that Hoku Insurance acts as a true "Hokulea Star" for its clients, providing specialized solutions that protect both the personal assets and the professional legacies of the local community.
+                    Elizabeth is a co-owner and General Manager of Hoku Insurance, where she focuses on delivering personalized, high-touch service to clients across the islands. With a background rooted in strategic management and a passion for community-based business, Elizabeth recognized a vital need for a more consultative insurance experience in Hawaii. Her leadership is defined by a commitment to transparency and building long-term partnerships. Alongside Jeff, Liz ensures that Hoku Insurance acts as a true "Hōkūleʻa Star" for its clients, providing specialized solutions that protect both the personal assets and the professional legacies of the local community.
                   </p>
                 </div>
 
