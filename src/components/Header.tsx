@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MapPin, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import hokuLogo from "@/assets/hoku-logo-new.png";
 import hawaiiIsland from "@/assets/hawaii-island-stars.png";
 
@@ -14,13 +15,13 @@ const Header = () => {
   }, []);
 
   const leftLinks = [
-    { label: "Solutions", href: "#solutions" },
-    { label: "About", href: "#about" },
+    { label: "Solutions", href: "/#solutions" },
+    { label: "About", href: "/about" },
   ];
 
   const rightLinks = [
-    { label: "ASO Services", href: "#aso" },
-    { label: "Contact", href: "#contact" },
+    { label: "ASO Services", href: "/aso-services" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const linkClass =
@@ -66,47 +67,47 @@ const Header = () => {
                 scrolled ? "h-12" : "h-16"
               }`}
             />
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="absolute right-0 gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300"
             >
               Get a Quote
-            </a>
+            </Link>
 
             <nav className="flex items-center justify-end gap-8">
               {leftLinks.map((l) => (
-                <a key={l.label} href={l.href} className={linkClass}>
+                <Link key={l.label} to={l.href} className={linkClass}>
                   {l.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
-            <a href="#" className="flex items-center justify-center py-2">
+            <Link to="/" className="flex items-center justify-center py-2">
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-[65px]" : "h-[85px]"}`}
               />
-            </a>
+            </Link>
 
             <nav className="flex items-center justify-start gap-8">
               {rightLinks.map((l) => (
-                <a key={l.label} href={l.href} className={linkClass}>
+                <Link key={l.label} to={l.href} className={linkClass}>
                   {l.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
 
           {/* Mobile */}
           <div className="flex md:hidden items-center justify-between py-2">
-            <a href="#" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-[48px]" : "h-[64px]"}`}
               />
-            </a>
+            </Link>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
@@ -125,22 +126,22 @@ const Header = () => {
         >
           <nav className="bg-white px-6 py-4 space-y-1">
             {[...leftLinks, ...rightLinks].map((l) => (
-              <a
+              <Link
                 key={l.label}
-                href={l.href}
+                to={l.href}
                 onClick={() => setMobileOpen(false)}
                 className="block py-2.5 text-sm font-medium tracking-wider uppercase text-foreground/50 hover:text-primary transition-colors"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               onClick={() => setMobileOpen(false)}
               className="block mt-3 text-center gradient-gold text-white px-5 py-2.5 text-sm font-semibold tracking-wider uppercase rounded"
             >
               Get a Quote
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
