@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="text-sm font-semibold tracking-[0.25em] uppercase text-gold mb-6">HAWAII'S TRUSTED INSURANCE PARTNER
 
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold leading-[1.15] mb-8 text-white">Protecting What Matters Most in Hawaii.
+          <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-medium tracking-tight leading-[1.15] mb-8 text-white">Protecting What Matters Most in Hawaii.
 
           </h1>
           <p className="text-lg text-white/70 font-body leading-relaxed mb-10 max-w-lg">
