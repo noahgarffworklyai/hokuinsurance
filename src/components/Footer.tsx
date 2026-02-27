@@ -65,6 +65,11 @@ const Footer = () => {
                   info@hokuins.com
                 </a>
               </li>
+              <li className="flex items-start gap-3 pt-2 border-t border-border/30 mt-2">
+                <span className="text-muted-foreground text-sm">
+                  To pay your bill, please call us.
+                </span>
+              </li>
             </ul>
           </div>
         </div>
