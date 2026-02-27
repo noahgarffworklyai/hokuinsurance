@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -24,13 +25,12 @@ const Hero = () => {
             backed by local expertise and genuine aloha.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 hover:-translate-y-0.5">
-
               Talk to an Expert
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
             <a
               href="#solutions"
               className="inline-flex items-center gap-2 border border-white/25 text-white/90 px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:bg-white/10 transition-all duration-300">

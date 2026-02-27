@@ -1,9 +1,18 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import hokuLogo from "@/assets/hoku-logo-new.png";
+
+const quickLinks = [
+  { label: "Solutions", href: "/#solutions" },
+  { label: "About", href: "/about" },
+  { label: "ASO Services", href: "/aso-services" },
+  { label: "Contact", href: "/contact" },
+  { label: "Pay Your Bill", href: "/pay-your-bill" },
+];
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-white relative">
+    <footer className="bg-white relative">
       <div className="container py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
@@ -19,14 +28,14 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-sm tracking-[0.1em] uppercase text-foreground mb-5">Quick Links</h4>
             <ul className="space-y-2.5">
-              {["Solutions", "About", "ASO Services", "Contact"].map((item) => (
-                <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase().replace(/ /g, "")}`}
+              {quickLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    to={item.href}
                     className="text-muted-foreground text-sm hover:text-primary transition-colors"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
