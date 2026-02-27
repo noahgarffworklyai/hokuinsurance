@@ -71,7 +71,7 @@ const Header = () => {
       >
         <div className="bg-primary text-white">
           <div className="container py-1.5 flex items-center justify-between text-[11px] font-medium tracking-wide">
-            <a href="https://maps.google.com/?q=75-170+Hualalai+Rd+Ste+A100,+Kailua-Kona,+HI+96740" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">
+            <a href="https://www.google.com/maps/place/75-170+Hualalai+Rd+ste+a100,+Kailua-Kona,+HI+96740/@19.6376964,-155.9899319,18.47z/data=!4m6!3m5!1s0x79540efc932a6fd9:0x345c2d61430342!8m2!3d19.6373927!4d-155.9889213!16s%2Fg%2F11vkqqx7hp?entry=ttu&g_ep=EgoyMDI2MDIyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">
               <MapPin className="h-3 w-3" />
               75-170 Hualalai Rd Ste A100, Kailua-Kona, HI 96740
             </a>
