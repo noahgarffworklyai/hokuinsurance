@@ -75,9 +75,9 @@ const Header = () => {
               <MapPin className="h-3 w-3" />
               75-170 Hualalai Rd Ste A100, Kailua-Kona, HI 96740
             </span>
-            <a href="tel:+18085551234" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">
+            <a href="tel:+18084944451" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">
               <Phone className="h-3 w-3" />
-              (808) 555-1234
+              (808) 494-4451
             </a>
           </div>
         </div>
