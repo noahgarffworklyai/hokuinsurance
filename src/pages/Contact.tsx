@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
@@ -129,6 +129,31 @@ const Contact = () => {
                       <a href="mailto:info@hokuinsurance.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">info@hokuins.com</a>
                     </div>
                   </div>
+                </div>
+
+                {/* Office Hours */}
+                <div className="bg-card rounded-lg p-8 border border-border">
+                  <div className="flex items-start gap-4">
+                    <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground text-sm">Office Hours</p>
+                      <p className="text-muted-foreground text-sm">Monday – Friday, 8:00 AM – 5:00 PM HST</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Google Map */}
+                <div className="rounded-lg overflow-hidden border border-border">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.770244233384!2d-155.9918784245452!3d19.637117981686444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79540efcf3d363b9%3A0x41b53f1626ed487e!2s75-170%20Hualalai%20Rd%2C%20Kailua-Kona%2C%20HI%2096740!5e0!3m2!1sen!2sus!4v1772159781399!5m2!1sen!2sus"
+                    width="100%"
+                    height="280"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Hoku Insurance Office Location"
+                  />
                 </div>
               </div>
             </div>
