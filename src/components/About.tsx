@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-import hawaiiCoast from "@/assets/hawaii-coast.jpg";
+import hawaiiStars from "@/assets/hawaii-stars.jpg";
 
 const highlights = [
   "Full-service commercial & personal P&C agency",
@@ -43,7 +43,7 @@ const About = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src={hawaiiCoast} 
+                src={hawaiiStars} 
                 alt="Beautiful Hawaii coastline at sunset" 
                 className="w-full h-[400px] object-cover"
               />
