@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Search, ShieldCheck, Users, FileText, Handshake, TrendingDown, BarChart3, Award } from "lucide-react";
-import businessTeam from "@/assets/business-team.jpg";
+import riskStrategy from "@/assets/risk-strategy.jpg";
 
 const pillars = [
   { icon: Search, title: "Comprehensive Risk Identification", desc: "We don't just look at the obvious. Our team conducts deep-dive assessments to identify \"hidden\" risks—from supply chain vulnerabilities in the middle of the Pacific to cyber-security gaps and physical safety hazards on your job site." },
@@ -18,7 +18,7 @@ const whyUs = [
 
 const RiskManagement = () => {
   return (
-    <ServicePageLayout title="Risk Management: Your North Star for Business Resilience" subtitle="Risk Management" heroImage={businessTeam}>
+    <ServicePageLayout title="Risk Management: Your North Star for Business Resilience" subtitle="Risk Management" heroImage={riskStrategy}>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         At Hoku Insurance, we believe the most effective insurance policy is the one you never have to use. While traditional insurance reacts after a disaster has struck, true security is built on a foundation of foresight. We partner with you to implement proactive risk assessment and loss prevention strategies to protect your business before claims occur.
       </p>
