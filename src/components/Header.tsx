@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import hokuLogo from "@/assets/hoku-logo-new.png";
 import hawaiiIsland from "@/assets/hawaii-island-stars.png";
 
+// Preload images so they render instantly on navigation
+const preload = (src: string) => { const img = new Image(); img.src = src; };
+preload(hokuLogo);
+preload(hawaiiIsland);
+
 interface NavItem {
   label: string;
   href: string;
