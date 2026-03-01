@@ -11,15 +11,26 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    // Simulate submission
-    setTimeout(() => {
-      toast({ title: "Message sent!", description: "We'll be in touch soon." });
-      setForm({ name: "", email: "", phone: "", message: "" });
+    try {
+      const res = await fetch("https://api.formdrop.co/f/xtAGRpoA", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        toast({ title: "Message sent!", description: "We'll be in touch soon." });
+        setForm({ name: "", email: "", phone: "", message: "" });
+      } else {
+        toast({ title: "Something went wrong", description: "Please try again.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Network error", description: "Please check your connection.", variant: "destructive" });
+    } finally {
       setSubmitting(false);
-    }, 800);
+    }
   };
 
   return (
