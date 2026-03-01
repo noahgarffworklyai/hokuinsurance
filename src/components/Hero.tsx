@@ -22,7 +22,7 @@ const Hero = () => {
           </h1>
           <p className="text-lg text-white/70 font-body leading-relaxed mb-10 max-w-lg">
             Full-service commercial and personal lines Property &amp; Casualty insurance, 
-            backed by local expertise and genuine aloha.
+            backed by local expertise and genuine Aloha.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
