@@ -86,9 +86,16 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-foreground mb-1.5">Phone</label>
                     <input
                       type="tel"
-                      maxLength={20}
+                      maxLength={14}
                       value={form.phone}
-                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                      onChange={(e) => {
+                        const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
+                        let formatted = "";
+                        if (digits.length > 0) formatted = `(${digits.slice(0, 3)}`;
+                        if (digits.length >= 4) formatted += `) ${digits.slice(3, 6)}`;
+                        if (digits.length >= 7) formatted += `-${digits.slice(6)}`;
+                        setForm({ ...form, phone: formatted });
+                      }}
                       className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       placeholder="(808) 555-1234"
                     />
