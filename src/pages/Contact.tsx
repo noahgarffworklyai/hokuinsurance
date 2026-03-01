@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 const Contact = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [submitting, setSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,8 +23,8 @@ const Contact = () => {
         body: JSON.stringify(form),
       });
       if (res.ok) {
-        toast({ title: "Message sent!", description: "We'll be in touch soon." });
         setForm({ name: "", email: "", phone: "", message: "" });
+        setShowSuccess(true);
       } else {
         toast({ title: "Something went wrong", description: "Please try again.", variant: "destructive" });
       }
@@ -173,6 +175,24 @@ const Contact = () => {
             </div>
           </div>
         </section>
+
+        <Dialog open={showSuccess} onOpenChange={setShowSuccess}>
+          <DialogContent className="text-center max-w-sm">
+            <div className="flex flex-col items-center gap-3 py-4">
+              <CheckCircle className="h-12 w-12 text-green-500" />
+              <DialogTitle className="text-xl font-heading font-bold">Message Sent!</DialogTitle>
+              <DialogDescription className="text-muted-foreground">
+                We'll be in touch soon.
+              </DialogDescription>
+              <button
+                onClick={() => setShowSuccess(false)}
+                className="gradient-gold text-white px-6 py-2.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 mt-2"
+              >
+                OK
+              </button>
+            </div>
+          </DialogContent>
+        </Dialog>
       </main>
       <Footer />
     </div>
