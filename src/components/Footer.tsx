@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold text-[11px] tracking-[0.25em] uppercase text-foreground mb-6">Quick Links</h4>
+            <h4 className="font-heading font-semibold text-[10px] tracking-[0.3em] uppercase text-foreground/80 mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((item) => (
                 <li key={item.label}>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading font-semibold text-[11px] tracking-[0.25em] uppercase text-foreground mb-6">Contact Us</h4>
+            <h4 className="font-heading font-semibold text-[10px] tracking-[0.3em] uppercase text-foreground/80 mb-6">Contact Us</h4>
             <ul className="space-y-3.5">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />

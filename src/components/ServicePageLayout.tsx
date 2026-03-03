@@ -29,10 +29,10 @@ const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePage
               <ArrowLeft className="h-4 w-4" />
               Back to Home
             </Link>
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-accent mb-3">
+            <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-accent mb-4">
               {subtitle}
             </p>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-tight max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-heading font-semibold text-white leading-[1.1] tracking-[-0.02em] max-w-3xl">
               {title}
             </h1>
             <div className="w-16 h-[2px] gradient-gold mt-6 rounded-full" />

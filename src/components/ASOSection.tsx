@@ -19,11 +19,11 @@ const ASOSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-[11px] font-semibold tracking-[0.35em] uppercase text-secondary mb-4">Sister Company</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-heading font-semibold text-foreground tracking-[-0.01em] leading-tight">
+          <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-secondary mb-5">Sister Company</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-[3.5rem] font-heading font-semibold text-foreground tracking-[-0.02em] leading-[1.1]">
             Administrative Services
           </h2>
-          <p className="mt-6 text-muted-foreground max-w-xl mx-auto leading-relaxed">
+          <p className="mt-6 text-muted-foreground max-w-lg mx-auto leading-[1.8] text-[15px]">
             Beyond insurance, our ASO division helps businesses focus on growth by handling the complexities of HR, payroll, and compliance.
           </p>
         </div>
