@@ -30,8 +30,8 @@ const AboutPage = () => {
               <ArrowLeft className="h-4 w-4" />
               Back to Home
             </Link>
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-accent mb-3">About Hoku</p>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-tight max-w-3xl">
+            <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-accent mb-4">About Hoku</p>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-semibold text-white leading-[1.15] tracking-[-0.02em] max-w-3xl">
               Guided by Respect,{" "}
               <span className="text-gradient-gold">Rooted in Aloha</span>
             </h1>

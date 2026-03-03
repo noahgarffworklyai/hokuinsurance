@@ -32,7 +32,7 @@ const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePage
             <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-accent mb-4">
               {subtitle}
             </p>
-            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-heading font-semibold text-white leading-[1.1] tracking-[-0.02em] max-w-3xl">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-semibold text-white leading-[1.15] tracking-[-0.02em] max-w-3xl">
               {title}
             </h1>
             <div className="w-16 h-[2px] gradient-gold mt-6 rounded-full" />

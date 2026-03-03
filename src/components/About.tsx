@@ -23,7 +23,7 @@ const About = () => {
             }`}
           >
             <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-white/35 mb-5">About Hoku</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-[3.5rem] font-heading font-semibold leading-[1.1] mb-8 text-white tracking-[-0.02em]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-heading font-semibold leading-[1.15] mb-8 text-white tracking-[-0.02em]">
               Guided by Respect,{" "}
               <span className="text-gradient-gold">Rooted in Aloha</span>
             </h2>
