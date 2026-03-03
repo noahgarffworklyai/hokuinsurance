@@ -1,4 +1,5 @@
 import { Briefcase, DollarSign, ClipboardCheck, ShieldCheck } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const asoServices = [
   { icon: DollarSign, title: "Payroll Administration", desc: "Accurate, timely payroll processing with tax compliance." },
@@ -8,27 +9,38 @@ const asoServices = [
 ];
 
 const ASOSection = () => {
+  const { ref, isVisible } = useScrollReveal(0.1);
+
   return (
-    <section id="aso" className="py-24 lg:py-32 bg-muted relative">
-      <div className="container">
-        <div className="text-center mb-16">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-secondary mb-3">Sister Company</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground">
+    <section id="aso" className="py-32 lg:py-40 bg-muted relative">
+      <div className="container" ref={ref}>
+        <div
+          className={`text-center mb-20 transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <p className="text-[11px] font-semibold tracking-[0.35em] uppercase text-secondary mb-4">Sister Company</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-heading font-semibold text-foreground tracking-[-0.01em] leading-tight">
             Administrative Services
           </h2>
-          <div className="w-16 h-[2px] gradient-gold mx-auto mt-5 rounded-full" />
-          <p className="mt-5 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 text-muted-foreground max-w-xl mx-auto leading-relaxed">
             Beyond insurance, our ASO division helps businesses focus on growth by handling the complexities of HR, payroll, and compliance.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {asoServices.map((svc) => (
-            <div key={svc.title} className="bg-card rounded-lg p-7 text-center border border-border hover:border-accent/30 hover:shadow-lg transition-all duration-300">
-              <div className="w-12 h-12 mx-auto rounded-lg bg-primary flex items-center justify-center mb-4">
-                <svc.icon className="h-5 w-5 text-white" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {asoServices.map((svc, i) => (
+            <div
+              key={svc.title}
+              className={`bg-card rounded-xl p-8 text-center border border-border/60 hover:border-accent/40 hover:shadow-xl hover:shadow-primary/[0.04] transition-all duration-500 hover:-translate-y-1 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: isVisible ? `${i * 100 + 200}ms` : "0ms" }}
+            >
+              <div className="w-12 h-12 mx-auto rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                <svc.icon className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-base font-heading font-semibold text-foreground mb-2">{svc.title}</h3>
+              <h3 className="text-base font-heading font-semibold text-foreground mb-2 tracking-[-0.01em]">{svc.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{svc.desc}</p>
             </div>
           ))}
