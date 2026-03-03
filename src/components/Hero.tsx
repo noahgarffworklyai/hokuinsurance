@@ -17,12 +17,14 @@ const Hero = () => {
           <p className="text-[11px] font-semibold tracking-[0.35em] uppercase text-accent mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             Hawaii's Trusted Insurance Partner
           </p>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-medium tracking-[-0.02em] leading-[1.08] mb-8 text-white opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-medium tracking-[-0.025em] leading-[1.06] mb-8 text-white opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             Protecting What
             <br />
-            Matters Most.
+            Matters Most
+            <br />
+            <span className="text-gradient-gold">in Hawaii.</span>
           </h1>
-          <p className="text-lg text-white/60 font-body leading-relaxed mb-12 max-w-md opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
+          <p className="text-lg text-white/55 font-body leading-[1.85] mb-14 max-w-lg opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
             Full-service commercial and personal lines Property &amp; Casualty insurance, 
             backed by local expertise and genuine Aloha.
           </p>

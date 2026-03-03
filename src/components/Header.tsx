@@ -59,7 +59,7 @@ const Header = () => {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   const linkClass =
-    "text-[13px] font-medium tracking-[0.15em] uppercase text-foreground/50 hover:text-primary transition-colors duration-200";
+    "text-[12px] font-medium tracking-[0.18em] uppercase text-foreground/45 hover:text-primary transition-colors duration-300";
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
