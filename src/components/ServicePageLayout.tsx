@@ -16,7 +16,7 @@ const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePage
       <Header />
       <main>
         {/* Hero Banner */}
-        <section className="bg-primary pt-36 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
+        <section className="bg-primary pt-40 pb-20 lg:pt-48 lg:pb-28 relative overflow-hidden">
           {heroImage && (
             <img src={heroImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" decoding="async" />
           )}
@@ -24,18 +24,18 @@ const ServicePageLayout = ({ title, subtitle, heroImage, children }: ServicePage
           <div className="container relative z-10">
             <Link
               to="/"
-              className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-8 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Home
             </Link>
-            <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-accent mb-4">
+            <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-accent mb-5">
               {subtitle}
             </p>
-            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-heading font-semibold text-white leading-[1.1] tracking-[-0.02em] max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-heading font-semibold text-white leading-[1.15] tracking-[-0.02em] max-w-3xl">
               {title}
             </h1>
-            <div className="w-16 h-[2px] gradient-gold mt-6 rounded-full" />
+            <div className="w-16 h-[2px] gradient-gold mt-8 rounded-full" />
           </div>
         </section>
 
