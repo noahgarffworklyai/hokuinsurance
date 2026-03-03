@@ -159,7 +159,8 @@ const Header = () => {
 
           {/* Mobile */}
           <div className="flex md:hidden items-center justify-between py-2">
-            <Link to="/" className="flex items-center">
+            <div className="w-8" />
+            <Link to="/" className="flex items-center justify-center flex-1">
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
