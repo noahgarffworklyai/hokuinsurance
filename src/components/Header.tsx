@@ -148,7 +148,7 @@ const Header = () => {
               />
             </Link>
 
-            <nav className="flex items-center justify-start gap-8">
+            <nav className="flex items-center justify-start md:gap-4 lg:gap-8 md:pr-28 lg:pr-36">
               {rightLinks.map((l) => (
                 <Link key={l.label} to={l.href} className={linkClass}>
                   {l.label}
