@@ -158,9 +158,8 @@ const Header = () => {
           </div>
 
           {/* Mobile */}
-          <div className="flex md:hidden items-center justify-between py-2">
-            <div className="w-8" />
-            <Link to="/" className="flex items-center justify-center flex-1">
+          <div className="flex md:hidden items-center justify-center relative py-2">
+            <Link to="/" className="flex items-center justify-center">
               <img
                 src={hokuLogo}
                 alt="Hoku Insurance"
@@ -170,7 +169,7 @@ const Header = () => {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
-              className="text-foreground/60 hover:text-primary transition-colors"
+              className="absolute right-0 text-foreground/60 hover:text-primary transition-colors"
             >
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
