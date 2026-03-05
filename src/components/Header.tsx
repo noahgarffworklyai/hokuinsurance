@@ -101,6 +101,12 @@ const Header = () => {
                 scrolled ? "h-12" : "h-16"
               }`}
             />
+            <Link
+              to="/contact"
+              className="absolute right-0 gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300"
+            >
+              Get a Quote
+            </Link>
 
             <nav className="flex items-center justify-end gap-8">
               {leftLinks.map((l) => (
@@ -142,22 +148,12 @@ const Header = () => {
               />
             </Link>
 
-            <nav className="flex items-center justify-between">
-              <div className="flex items-center gap-8">
-                {rightLinks.map((l) => (
-                  <Link key={l.label} to={l.href} className={`${linkClass} text-center`}>
-                    {l.label}
-                  </Link>
-                ))}
-              </div>
-              <div className="ml-auto flex-none">
-                <Link
-                  to="/contact"
-                  className="inline-block gradient-gold text-white px-3 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300 text-center"
-                >
-                  Get a Quote
+            <nav className="flex items-center justify-start gap-8">
+              {rightLinks.map((l) => (
+                <Link key={l.label} to={l.href} className={linkClass}>
+                  {l.label}
                 </Link>
-              </div>
+              ))}
             </nav>
           </div>
 
