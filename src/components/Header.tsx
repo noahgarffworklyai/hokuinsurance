@@ -103,7 +103,7 @@ const Header = () => {
             />
             <Link
               to="/contact"
-              className="absolute right-0 gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300"
+              className="absolute right-0 gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300 max-w-[120px] text-center leading-tight whitespace-normal"
             >
               Get a Quote
             </Link>
