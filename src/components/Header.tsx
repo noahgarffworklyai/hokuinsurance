@@ -142,15 +142,17 @@ const Header = () => {
               />
             </Link>
 
-            <nav className="flex items-center justify-start gap-8">
-              {rightLinks.map((l) => (
-                <Link key={l.label} to={l.href} className={linkClass}>
-                  {l.label}
-                </Link>
-              ))}
+            <nav className="flex items-center justify-between">
+              <div className="flex items-center gap-8">
+                {rightLinks.map((l) => (
+                  <Link key={l.label} to={l.href} className={`${linkClass} text-center`}>
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
               <Link
                 to="/contact"
-                className="gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300 whitespace-nowrap shrink-0"
+                className="gradient-gold text-white px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300 whitespace-nowrap shrink-0 ml-auto"
               >
                 Get a Quote
               </Link>
