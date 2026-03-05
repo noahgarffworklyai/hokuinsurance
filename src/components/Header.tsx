@@ -150,12 +150,14 @@ const Header = () => {
                   </Link>
                 ))}
               </div>
-              <Link
-                to="/contact"
-                className="gradient-gold text-white px-3 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300 ml-auto text-center w-fit"
-              >
-                Get a Quote
-              </Link>
+              <div className="ml-auto flex-none">
+                <Link
+                  to="/contact"
+                  className="inline-block gradient-gold text-white px-3 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-md hover:shadow-accent/20 transition-all duration-300 text-center"
+                >
+                  Get a Quote
+                </Link>
+              </div>
             </nav>
           </div>
 
