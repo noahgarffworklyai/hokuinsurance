@@ -14,11 +14,11 @@ const PayYourBill = () => {
             We handle payments personally to ensure accuracy and answer any questions about your policy or statement. Give us a call and we'll take care of the rest.
           </p>
           <a
-            href="tel:+18084944451"
+            href="tel:+18088097670"
             className="inline-flex items-center justify-center gap-2.5 gradient-gold text-white px-8 py-4 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300"
           >
             <Phone className="h-4 w-4" />
-            (808) 494-4451
+            (808) 809-7670
           </a>
         </div>
 
