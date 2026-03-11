@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hokuinsurance.lovable.app/</loc>
+    <loc>https://hokuinsurance.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/commercial-insurance</loc>
+    <loc>https://hokuinsurance.com/commercial-insurance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/personal-lines</loc>
+    <loc>https://hokuinsurance.com/personal-lines</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/property-casualty</loc>
+    <loc>https://hokuinsurance.com/property-casualty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/risk-management</loc>
+    <loc>https://hokuinsurance.com/risk-management</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/claims-support</loc>
+    <loc>https://hokuinsurance.com/claims-support</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/aso-services</loc>
+    <loc>https://hokuinsurance.com/aso-services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/about</loc>
+    <loc>https://hokuinsurance.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/contact</loc>
+    <loc>https://hokuinsurance.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hokuinsurance.lovable.app/pay-your-bill</loc>
+    <loc>https://hokuinsurance.com/pay-your-bill</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
