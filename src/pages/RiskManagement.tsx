@@ -1,6 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Search, ShieldCheck, Users, FileText, Handshake, TrendingDown, BarChart3, Award } from "lucide-react";
 import riskStrategy from "@/assets/risk-strategy.jpg";
+import SEO from "@/components/SEO";
 
 const pillars = [
   { icon: Search, title: "Comprehensive Risk Identification", desc: "We don't just look at the obvious. Our team conducts deep-dive assessments to identify \"hidden\" risks—from supply chain vulnerabilities in the middle of the Pacific to cyber-security gaps and physical safety hazards on your job site." },
@@ -18,59 +19,66 @@ const whyUs = [
 
 const RiskManagement = () => {
   return (
-     <ServicePageLayout title="Risk Management: Your Hokuleʻa Star for Business Resilience" subtitle="Risk Management" heroImage={riskStrategy}>
-       <p className="text-muted-foreground leading-relaxed mb-6">
-        At Hoku Insurance, we believe the most effective insurance policy is the one you never have to use. While traditional insurance reacts after a disaster has struck, true security is built on a foundation of foresight. We partner with you to implement proactive risk assessment and loss prevention strategies to protect your business before claims occur.
-      </p>
-      <p className="text-muted-foreground leading-relaxed mb-12">
-        In the unique landscape of Hawaii, where logistical hurdles and specific environmental factors can amplify a single mistake, a "wait and see" approach is a liability in itself. Our mission is to provide the guidance necessary to transform your business from a reactive entity into a resilient one.
-      </p>
-
-      <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-4">
-        The Pillars of Proactive Risk Management
-      </h2>
-      <p className="text-muted-foreground leading-relaxed mb-8">
-        Risk management is not a one-time audit; it is an ongoing cultural shift within your organization. Hoku Insurance provides the expert navigation to help you master these core areas:
-      </p>
-      <div className="grid sm:grid-cols-2 gap-5 mb-16">
-        {pillars.map((p) => (
-          <div key={p.title} className="bg-card rounded-lg p-6 border border-border">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mb-4">
-              <p.icon className="h-5 w-5 text-white" />
-            </div>
-            <h3 className="text-base font-heading font-semibold text-foreground mb-2">{p.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
-          </div>
-        ))}
-      </div>
-
-      <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
-        Why Guidance is Our Greatest Asset
-      </h2>
-      <div className="space-y-6 mb-16">
-        {whyUs.map((w, i) => (
-          <div key={w.title} className="flex gap-5">
-            <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0 mt-1">
-              <w.icon className="h-5 w-5 text-accent-foreground" />
-            </div>
-            <div>
-              <h3 className="text-base font-heading font-semibold text-foreground mb-1">{i + 1}. {w.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{w.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
-        <h2 className="text-2xl font-heading font-bold text-white mb-4">Navigate with Confidence</h2>
-        <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-          Your business is your legacy. Don't leave its survival to chance. Let Hoku Insurance provide the expert guidance and proactive strategies you need to stay ahead of the curve and protected from the unexpected.
+    <>
+      <SEO
+        title="Risk Management Hawaii | Loss Prevention & Safety | Hoku Insurance"
+        description="Proactive risk management and loss prevention for Hawaii businesses. Risk assessment, safety culture, loss control & contractual risk transfer by Hoku Insurance in Kailua-Kona."
+        canonical="/risk-management"
+      />
+      <ServicePageLayout title="Risk Management: Your Hokuleʻa Star for Business Resilience" subtitle="Risk Management" heroImage={riskStrategy}>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          At Hoku Insurance, we believe the most effective insurance policy is the one you never have to use. While traditional insurance reacts after a disaster has struck, true security is built on a foundation of foresight. We partner with you to implement proactive risk assessment and loss prevention strategies to protect your business before claims occur.
         </p>
-        <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
-          Talk to an Expert
-        </a>
-      </div>
-    </ServicePageLayout>
+        <p className="text-muted-foreground leading-relaxed mb-12">
+          In the unique landscape of Hawaii, where logistical hurdles and specific environmental factors can amplify a single mistake, a "wait and see" approach is a liability in itself. Our mission is to provide the guidance necessary to transform your business from a reactive entity into a resilient one.
+        </p>
+
+        <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-4">
+          The Pillars of Proactive Risk Management
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-8">
+          Risk management is not a one-time audit; it is an ongoing cultural shift within your organization. Hoku Insurance provides the expert navigation to help you master these core areas:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-5 mb-16">
+          {pillars.map((p) => (
+            <div key={p.title} className="bg-card rounded-lg p-6 border border-border">
+              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mb-4">
+                <p.icon className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="text-base font-heading font-semibold text-foreground mb-2">{p.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
+          Why Guidance is Our Greatest Asset
+        </h2>
+        <div className="space-y-6 mb-16">
+          {whyUs.map((w, i) => (
+            <div key={w.title} className="flex gap-5">
+              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0 mt-1">
+                <w.icon className="h-5 w-5 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="text-base font-heading font-semibold text-foreground mb-1">{i + 1}. {w.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{w.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-4">Navigate with Confidence</h2>
+          <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
+            Your business is your legacy. Don't leave its survival to chance. Let Hoku Insurance provide the expert guidance and proactive strategies you need to stay ahead of the curve and protected from the unexpected.
+          </p>
+          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+            Talk to an Expert
+          </a>
+        </div>
+      </ServicePageLayout>
+    </>
   );
 };
 

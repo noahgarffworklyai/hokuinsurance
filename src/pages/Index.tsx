@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import ASOSection from "@/components/ASOSection";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   const location = useLocation();
@@ -19,6 +20,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Hoku Insurance | Hawaii's Trusted Property & Casualty Insurance Agency"
+        description="Hoku Insurance LLC is a full-service commercial and personal lines Property & Casualty insurance agency in Kailua-Kona, Hawaii. Get expert coverage with genuine Aloha."
+        canonical="/"
+      />
       <Header />
       <main>
         <Hero />

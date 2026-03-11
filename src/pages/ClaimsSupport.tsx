@@ -1,6 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { AlertCircle, FileSearch, MessageCircle, Scale, MapPin, Handshake, Clock, Heart } from "lucide-react";
 import hawaiiBeach from "@/assets/hawaii-beach.jpg";
+import SEO from "@/components/SEO";
 
 const stages = [
   { icon: AlertCircle, title: "Immediate Response & Guidance", desc: "From the moment a loss occurs, we are here to advise on the critical first steps—whether that's securing a property from further damage or documenting a liability incident." },
@@ -18,59 +19,66 @@ const differences = [
 
 const ClaimsSupport = () => {
   return (
-    <ServicePageLayout title="Claims Support: Your Advocate in the Moments That Matter" subtitle="Claims Support" heroImage={hawaiiBeach}>
-      <p className="text-muted-foreground leading-relaxed mb-6">
-        When the unexpected happens, the value of an insurance policy is no longer found in the fine print of a contract—it is found in the quality of the support you receive. At Hoku Insurance, we understand that filing a claim can be one of the most stressful experiences for any business owner or resident. That is why we provide dedicated local claims advocacy to guide you through the process and ensure fair, timely resolution.
-      </p>
-      <p className="text-muted-foreground leading-relaxed mb-12">
-        In a world of automated phone trees and mainland call centers, Hoku Insurance stands apart by offering a human-centric, "Hokuleʻa Star" approach to claims. We don't just hand you a carrier's 1-800 number and wish you luck; we step into the arena with you, acting as your professional advocate from the initial report to the final settlement.
-      </p>
-
-      <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-4">
-        Navigating the Claims Journey
-      </h2>
-      <p className="text-muted-foreground leading-relaxed mb-8">
-        The path to recovery after a loss is often complex, involving adjusters, contractors, and extensive documentation. Our claims support team provides the expert guidance needed to navigate each stage:
-      </p>
-      <div className="grid sm:grid-cols-2 gap-5 mb-16">
-        {stages.map((s) => (
-          <div key={s.title} className="bg-card rounded-lg p-6 border border-border">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mb-4">
-              <s.icon className="h-5 w-5 text-white" />
-            </div>
-            <h3 className="text-base font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-          </div>
-        ))}
-      </div>
-
-      <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
-        The Hoku Difference: Local Advocacy
-      </h2>
-      <div className="space-y-6 mb-16">
-        {differences.map((d, i) => (
-          <div key={d.title} className="flex gap-5">
-            <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0 mt-1">
-              <d.icon className="h-5 w-5 text-accent-foreground" />
-            </div>
-            <div>
-              <h3 className="text-base font-heading font-semibold text-foreground mb-1">{i + 1}. {d.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{d.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
-        <h2 className="text-2xl font-heading font-bold text-white mb-4">You Don't Have to Walk the Path Alone</h2>
-        <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-          At Hoku Insurance, we take pride in being the steady hand during a storm. With our dedicated local claims advocacy, you can face the unexpected with the confidence that you have a partner committed to your recovery and your peace of mind.
+    <>
+      <SEO
+        title="Insurance Claims Support Hawaii | Local Claims Advocacy | Hoku Insurance"
+        description="Dedicated local claims advocacy in Hawaii. Get expert guidance through insurance claims with fair, timely resolution from Hoku Insurance in Kailua-Kona."
+        canonical="/claims-support"
+      />
+      <ServicePageLayout title="Claims Support: Your Advocate in the Moments That Matter" subtitle="Claims Support" heroImage={hawaiiBeach}>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          When the unexpected happens, the value of an insurance policy is no longer found in the fine print of a contract—it is found in the quality of the support you receive. At Hoku Insurance, we understand that filing a claim can be one of the most stressful experiences for any business owner or resident. That is why we provide dedicated local claims advocacy to guide you through the process and ensure fair, timely resolution.
         </p>
-        <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
-          Contact Us
-        </a>
-      </div>
-    </ServicePageLayout>
+        <p className="text-muted-foreground leading-relaxed mb-12">
+          In a world of automated phone trees and mainland call centers, Hoku Insurance stands apart by offering a human-centric, "Hokuleʻa Star" approach to claims. We don't just hand you a carrier's 1-800 number and wish you luck; we step into the arena with you, acting as your professional advocate from the initial report to the final settlement.
+        </p>
+
+        <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-4">
+          Navigating the Claims Journey
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-8">
+          The path to recovery after a loss is often complex, involving adjusters, contractors, and extensive documentation. Our claims support team provides the expert guidance needed to navigate each stage:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-5 mb-16">
+          {stages.map((s) => (
+            <div key={s.title} className="bg-card rounded-lg p-6 border border-border">
+              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mb-4">
+                <s.icon className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="text-base font-heading font-semibold text-foreground mb-2">{s.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
+          The Hoku Difference: Local Advocacy
+        </h2>
+        <div className="space-y-6 mb-16">
+          {differences.map((d, i) => (
+            <div key={d.title} className="flex gap-5">
+              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0 mt-1">
+                <d.icon className="h-5 w-5 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="text-base font-heading font-semibold text-foreground mb-1">{i + 1}. {d.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{d.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-4">You Don't Have to Walk the Path Alone</h2>
+          <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
+            At Hoku Insurance, we take pride in being the steady hand during a storm. With our dedicated local claims advocacy, you can face the unexpected with the confidence that you have a partner committed to your recovery and your peace of mind.
+          </p>
+          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+            Contact Us
+          </a>
+        </div>
+      </ServicePageLayout>
+    </>
   );
 };
 
