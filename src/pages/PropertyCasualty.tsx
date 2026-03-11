@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { CloudRain, Waves, Mountain, Flame, Shield, Umbrella, Phone } from "lucide-react";
-import hawaiiProperty from "@/assets/hawaii-property.jpg";
+import hawaiiProperty from "@/assets/hawaii-beachhouse.png";
 
 const propertyItems = [
   { icon: CloudRain, title: "Hurricane & Windstorm", desc: "Standard homeowners' insurance often stops where a tropical storm begins. We help you secure dedicated hurricane coverage to protect against high-velocity winds and debris." },
