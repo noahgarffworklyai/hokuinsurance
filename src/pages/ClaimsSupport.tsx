@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { AlertCircle, FileSearch, MessageCircle, Scale, MapPin, Handshake, Clock, Heart } from "lucide-react";
 import hawaiiBeach from "@/assets/hawaii-beach.jpg";
