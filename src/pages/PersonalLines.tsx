@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Home, Car, CloudRain, Umbrella, Building, MapPin, Search, Users, Phone } from "lucide-react";
-import hawaiiHome from "@/assets/hawaii-home.jpg";
+import hawaiiHome from "@/assets/hawaii-cliff-house.png";
 
 const coverages = [
   { icon: Home, title: "Homeowners Insurance", desc: "Your home is likely your most significant asset. We offer robust coverage that accounts for Hawaii's specific environmental factors, ensuring your dwelling and personal property are protected against fire, theft, and liability." },
