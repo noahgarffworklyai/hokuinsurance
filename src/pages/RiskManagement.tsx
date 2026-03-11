@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { Search, ShieldCheck, Users, FileText, Handshake, TrendingDown, BarChart3, Award } from "lucide-react";
 import riskStrategy from "@/assets/risk-strategy.jpg";
@@ -73,9 +74,9 @@ const RiskManagement = () => {
           <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
             Your business is your legacy. Don't leave its survival to chance. Let Hoku Insurance provide the expert guidance and proactive strategies you need to stay ahead of the curve and protected from the unexpected.
           </p>
-          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+          <Link to="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
             Talk to an Expert
-          </a>
+          </Link>
         </div>
       </ServicePageLayout>
     </>

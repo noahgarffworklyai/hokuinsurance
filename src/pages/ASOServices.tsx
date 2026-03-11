@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { DollarSign, Briefcase, ClipboardCheck, Users, ShieldCheck, MapPin, TrendingUp, Link2 } from "lucide-react";
 import teamMeeting from "@/assets/team-meeting.jpg";
@@ -73,9 +74,9 @@ const ASOServicesPage = () => {
           <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
             Don't let the weight of administration dim your business's potential. By choosing Hoku Resources for your ASO needs, you're investing in the peace of mind that comes from knowing your back office is as solid as the island lava rock.
           </p>
-          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+          <Link to="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
             Contact Us
-          </a>
+          </Link>
         </div>
       </ServicePageLayout>
     </>
