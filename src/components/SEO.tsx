@@ -7,7 +7,7 @@ interface SEOProps {
   ogImage?: string;
 }
 
-const BASE_URL = "https://hokuinsurance.lovable.app";
+const BASE_URL = "https://hokuinsurance.com";
 const DEFAULT_OG_IMAGE = "https://storage.googleapis.com/gpt-engineer-file-uploads/snqyPX6evRdYNSFkjfzA8jCQ5gE3/social-images/social-1772499102914-Screenshot_2026-03-02_at_2.50.16_PM.webp";
 
 const SEO = ({ title, description, canonical, ogImage }: SEOProps) => {
