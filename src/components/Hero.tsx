@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover object-bottom" fetchPriority="high" decoding="async" />
+        <img src={heroBg} alt="Scenic Hawaii coastline representing Hoku Insurance's commitment to protecting island properties" className="w-full h-full object-cover object-bottom" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(195_55%_10%/0.94)] via-[hsl(195_55%_14%/0.85)] to-[hsl(195_55%_20%/0.6)]" />
       </div>
 
