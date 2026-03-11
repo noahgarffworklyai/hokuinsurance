@@ -63,7 +63,7 @@ const PropertyCasualty = () => {
         ))}
       </div>
 
-      <div className="bg-primary rounded-lg p-8 lg:p-10">
+      <div className="bg-primary rounded-lg p-8 lg:p-10 text-center">
         <h2 className="text-2xl font-heading font-bold text-white mb-4">Why the "Hoku" Way Matters</h2>
         <p className="text-white/70 leading-relaxed mb-6">
           The word Hoku refers to a star—a point of navigation. In a 2026 insurance market characterized by rising premiums and retreating carriers, we act as your Hokuleʻa Star. As an independent agency, we have the local relationships and market access to find stable, high-quality coverage when the "big name" insurers pull back. We take a consultative, hands-on approach to ensure you aren't just paying a premium, but actually securing your legacy.
