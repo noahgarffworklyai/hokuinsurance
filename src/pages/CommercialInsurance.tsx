@@ -74,9 +74,9 @@ const CommercialInsurance = () => {
           <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
             Don't leave the future of your business to chance. Let the experts at Hoku Insurance provide the "Hokuleʻa Star" guidance you need to navigate your commercial insurance options with confidence.
           </p>
-          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+          <Link to="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
             Get a Quote
-          </a>
+          </Link>
         </div>
       </ServicePageLayout>
     </>

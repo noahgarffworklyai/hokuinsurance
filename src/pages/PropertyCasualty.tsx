@@ -75,9 +75,9 @@ const PropertyCasualty = () => {
           <p className="text-white/70 leading-relaxed mb-6">
             The word Hoku refers to a star—a point of navigation. In a 2026 insurance market characterized by rising premiums and retreating carriers, we act as your Hokuleʻa Star. As an independent agency, we have the local relationships and market access to find stable, high-quality coverage when the "big name" insurers pull back. We take a consultative, hands-on approach to ensure you aren't just paying a premium, but actually securing your legacy.
           </p>
-          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+          <Link to="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
             Get a Quote
-          </a>
+          </Link>
         </div>
       </ServicePageLayout>
     </>

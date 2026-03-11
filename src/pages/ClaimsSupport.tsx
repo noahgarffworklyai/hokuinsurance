@@ -73,9 +73,9 @@ const ClaimsSupport = () => {
           <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
             At Hoku Insurance, we take pride in being the steady hand during a storm. With our dedicated local claims advocacy, you can face the unexpected with the confidence that you have a partner committed to your recovery and your peace of mind.
           </p>
-          <a href="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
+          <Link to="/contact" className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
             Contact Us
-          </a>
+          </Link>
         </div>
       </ServicePageLayout>
     </>
