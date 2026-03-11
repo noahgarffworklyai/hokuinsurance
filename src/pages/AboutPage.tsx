@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import hawaiiCliffs from "@/assets/hawaii-cliffs.jpg";
+import SEO from "@/components/SEO";
 
 const highlights = [
   "Full-service commercial & personal P&C agency",
@@ -16,11 +17,16 @@ const highlights = [
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About Hoku Insurance | Locally Owned in Kailua-Kona, Hawaii"
+        description="Meet the founders of Hoku Insurance LLC. Locally owned and operated in Kailua-Kona, Hawaii, providing full-service commercial & personal P&C insurance with genuine Aloha."
+        canonical="/about"
+      />
       <Header />
       <main>
         {/* Hero Banner */}
         <section className="bg-primary pt-36 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
-          <img src={hawaiiCliffs} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" decoding="async" />
+          <img src={hawaiiCliffs} alt="Scenic Hawaii ocean cliffs near Kailua-Kona" className="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" decoding="async" />
           <div className="absolute inset-0 bg-gradient-to-br from-[hsl(195_55%_22%)] to-[hsl(195_55%_32%)] opacity-50" />
           <div className="container relative z-10">
             <Link

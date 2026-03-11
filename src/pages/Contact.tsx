@@ -6,6 +6,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -37,6 +38,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Contact Hoku Insurance | Get a Quote | Kailua-Kona, Hawaii"
+        description="Contact Hoku Insurance LLC in Kailua-Kona, Hawaii for a free insurance quote. Call (808) 809-7670 or send us a message. Office hours Mon–Fri 8AM–5PM HST."
+        canonical="/contact"
+      />
       <Header />
       <main>
         <section className="bg-primary pt-36 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
@@ -168,7 +174,7 @@ const Contact = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Hoku Insurance Office Location"
+                    title="Hoku Insurance office location map in Kailua-Kona, Hawaii"
                   />
                 </div>
               </div>
