@@ -18,9 +18,9 @@ const Contact = () => {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const res = await fetch("https://api.formdrop.co/f/xtAGRpoA", {
+      const res = await fetch("https://formspree.io/f/mgojvjpb", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(form),
       });
       if (res.ok) {
