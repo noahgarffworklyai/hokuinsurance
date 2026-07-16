@@ -52,7 +52,7 @@ const Header = () => {
   ];
 
   const rightLinks: NavItem[] = [
-    { label: "ASO Services", href: "/aso-services" },
+    { label: "Payroll & HR", href: "/aso-services" },
     { label: "Contact", href: "/contact" },
   ];
 
