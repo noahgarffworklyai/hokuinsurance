@@ -22,16 +22,16 @@ const ASOServicesPage = () => {
   return (
     <>
       <SEO
-        title="ASO Services Hawaii | Payroll, HR & Compliance | Hoku Resources"
-        description="Administrative Services Organization (ASO) solutions for Hawaii businesses. Expert payroll processing, HR support, compliance management & employee lifecycle services by Hoku Resources in Kailua-Kona."
+        title="Payroll & HR Services Hawaii | Human Capital Management | Hoku Resources"
+        description="Human Capital Management for Hawaii businesses. Payroll processing, HR support, compliance & employee management powered by isolved, delivered by Hoku Resources in Kailua-Kona."
         canonical="/aso-services"
       />
-      <ServicePageLayout title="Administrative Services Organization (ASO): Streamlining Your Success" subtitle="Sister Company" heroImage={teamMeeting}>
+      <ServicePageLayout title="Payroll & HR Services: Human Capital Management for Hawaii Businesses" subtitle="Sister Company" heroImage={teamMeeting}>
         <p className="text-muted-foreground leading-relaxed mb-6">
-          Running a business in Hawaii is rewarding, but the administrative burden can often feel like trekking up Mauna Kea in a gale. Between complex labor laws, payroll taxes, and the ever-changing landscape of HR compliance, many business owners find themselves spending more time on paperwork than on their actual craft. This is where our sister company, Hoku Resources, steps in to light the way. Our sister company provides Administrative Services Organization (ASO) solutions—payroll, HR, compliance, and employee management.
+          Running a business in Hawaii is rewarding, but the administrative burden can often feel like trekking up Mauna Kea in a gale. Between complex labor laws, payroll taxes, and the ever-changing landscape of HR compliance, many business owners find themselves spending more time on paperwork than on their actual craft. This is where our sister company, Hoku Resources, steps in to light the way.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-12">
-          While Hoku Insurance protects your assets, Hoku Resources protects your time and your culture. By partnering with an ASO, you maintain full control over your workforce while offloading the high-stress, technical back-office functions to a team of local experts.
+          By partnering with isolved, a leader in workforce technology, Hoku Resources offers payroll, HR, compliance, and employee management solutions. While Hoku Insurance protects your physical and financial assets, Hoku Resources protects your time and your workplace culture. With our scalable platform and expert support, you maintain full control over your workforce while offloading high-stress, technical back-office administration.
         </p>
 
         <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
