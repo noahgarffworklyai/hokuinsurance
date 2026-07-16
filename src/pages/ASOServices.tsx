@@ -5,10 +5,10 @@ import teamMeeting from "@/assets/team-meeting.jpg";
 import SEO from "@/components/SEO";
 
 const services = [
-  { icon: DollarSign, title: "Precise Payroll Processing", desc: "We handle the end-to-end payroll cycle, including direct deposits, tax withholdings, and the filing of state and federal payroll taxes. We ensure your team is paid accurately and on time, every time." },
-  { icon: Briefcase, title: "Human Resources Support", desc: "From drafting employee handbooks that reflect Hawaii's unique workplace culture to managing performance reviews and disciplinary procedures, we provide the infrastructure for a professional HR department." },
+  { icon: DollarSign, title: "Precise Payroll Processing", desc: "Through our trusted partnership, we facilitate a seamless, end-to-end payroll cycle. This includes direct deposits, tax withholdings, and the accurate filing of state and federal payroll taxes, ensuring your team is paid correctly and on time, every time." },
+  { icon: Briefcase, title: "Human Resources Support", desc: "Through our partnership with isolved, we provide your business with the robust infrastructure and digital tools of a professional HR department. While you retain full ownership of your HR operations, we equip you with a powerful platform and dedicated guidance to manage performance reviews, navigate disciplinary procedures, and draft employee handbooks tailored to Hawaii's unique workplace culture." },
   { icon: ClipboardCheck, title: "Rigorous Compliance Management", desc: "Staying compliant with Hawaii's TDI (Temporary Disability Insurance), Prepaid Healthcare Act, and workers' compensation requirements is a full-time job. Hoku Resources monitors legislative changes so you don't have to." },
-  { icon: Users, title: "Employee Lifecycle Management", desc: "We streamline everything from onboarding new hires to managing terminations and COBRA administration, ensuring a seamless experience for your staff." },
+  { icon: Users, title: "Employee Lifecycle Management", desc: "We streamline your internal administrative workflows from onboarding new hires to managing separations and COBRA administration, ensuring a professional, seamless experience for your staff." },
 ];
 
 const advantages = [
