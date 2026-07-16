@@ -23,8 +23,8 @@ const services = [
   },
   {
     icon: Users,
-    title: "ASO Services",
-    description: "Administrative Services Organization solutions — payroll, HR, compliance, and employee management.",
+    title: "Payroll & HR",
+    description: "Human Capital Management solutions via our sister company Hoku Resources — payroll, HR, compliance, and employee management powered by isolved.",
     href: "/aso-services",
   },
   {

@@ -21,10 +21,10 @@ const ASOSection = () => {
         >
           <p className="text-[10px] font-semibold tracking-[0.4em] uppercase text-secondary mb-5">Sister Company</p>
           <h2 className="text-3xl sm:text-4xl lg:text-[3.5rem] font-heading font-semibold text-foreground tracking-[-0.02em] leading-[1.1]">
-            Administrative Services
+            Hoku HR Services
           </h2>
           <p className="mt-6 text-muted-foreground max-w-lg mx-auto leading-[1.8] text-[15px]">
-            Beyond insurance, our ASO division helps businesses focus on growth by handling the complexities of HR, payroll, and compliance.
+            Through our partnership with isolved, Hoku Resources delivers Human Capital Management — payroll, HR, compliance, and employee management — so you can focus on growing your business.
           </p>
         </div>
 

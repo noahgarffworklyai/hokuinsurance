@@ -5,7 +5,7 @@ import hokuLogo from "@/assets/hoku-logo-new.png";
 const quickLinks = [
   { label: "Solutions", href: "/#solutions" },
   { label: "About", href: "/about" },
-  { label: "ASO Services", href: "/aso-services" },
+  { label: "Payroll & HR", href: "/aso-services" },
   { label: "Contact", href: "/contact" },
 ];
 
