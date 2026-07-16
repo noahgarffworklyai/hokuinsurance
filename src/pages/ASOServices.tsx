@@ -53,7 +53,7 @@ const ASOServicesPage = () => {
         </div>
 
         <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
-          The Hoku Resources Advantage: Why an ASO?
+          The Hoku Resources Advantage
         </h2>
         <div className="space-y-6 mb-16">
           {advantages.map((a, i) => (
