@@ -6,7 +6,7 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Insurance",
-    description: "Comprehensive coverage for businesses of all sizes — from general liability and property to workers' compensation.",
+    description: "Comprehensive coverage for businesses of all sizes, from general liability and property to workers' compensation.",
     href: "/commercial-insurance",
   },
   {
@@ -24,7 +24,7 @@ const services = [
   {
     icon: Users,
     title: "Payroll & HR",
-    description: "Human Capital Management solutions via our sister company Hoku Resources — payroll, HR, compliance, and employee management powered by isolved.",
+    description: "Payroll, HR, compliance, and employee management through our sister company Hoku Resources, powered by isolved.",
     href: "/aso-services",
   },
   {

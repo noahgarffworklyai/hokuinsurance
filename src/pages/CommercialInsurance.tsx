@@ -29,7 +29,7 @@ const CommercialInsurance = () => {
       />
       <ServicePageLayout title="Commercial Insurance: Protecting the Heart of Your Business" subtitle="Insurance Solutions" heroImage={businessTeam}>
         <p className="text-muted-foreground leading-relaxed mb-6">
-          At Hoku Insurance, we believe that your business is more than just a source of income—it is a reflection of your hard work, dedication, and vision for the future. Whether you are a solo entrepreneur starting a boutique in Kailua-Kona or a large-scale operation with teams across the islands, protecting your assets is vital to your long-term success. We provide comprehensive coverage for businesses of all sizes—from general liability and property to workers' compensation and commercial auto.
+          At Hoku Insurance, we believe your business is more than a source of income. It reflects your hard work, dedication, and vision for the future. Whether you're a solo entrepreneur opening a boutique in Kailua-Kona or a larger operation with teams across the islands, protecting what you've built is essential. We provide comprehensive coverage for businesses of all sizes, from general liability and property to workers' compensation and commercial auto.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-12">
           Navigating the complexities of the insurance landscape can be daunting. That is why we don't just sell policies; we partner with you. Our team takes a consultative, hands-on approach to ensure you understand your risks and the specific protections in place to mitigate them.

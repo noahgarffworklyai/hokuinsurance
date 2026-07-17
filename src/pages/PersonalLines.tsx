@@ -15,7 +15,7 @@ const coverages = [
 const advantages = [
   { icon: MapPin, title: "Local Expertise for Island Living", desc: "We don't just work here; we live here. We understand the nuances of different neighborhoods, from the salt air of the coastline to the moisture of the valleys. This local knowledge allows us to recommend coverage that is actually relevant to your lifestyle." },
   { icon: Search, title: "Independent Choice, Better Value", desc: "As an independent agency, Hoku Insurance works for you, not a specific insurance corporation. We have the freedom to shop among multiple highly-rated carriers to find the best balance of comprehensive protection and competitive premiums." },
-  { icon: Users, title: "A Consultative Relationship", desc: "Insurance shouldn't be a \"set it and forget it\" transaction. As your life changes—whether you're buying a new home, getting married, or welcoming a new driver to the family—we are here to adjust your coverage accordingly." },
+  { icon: Users, title: "A Consultative Relationship", desc: "Insurance shouldn't be a \"set it and forget it\" transaction. As your life changes, whether you're buying a home, getting married, or adding a new driver to the family, we're here to adjust your coverage." },
   { icon: Phone, title: "Dedicated Claims Advocacy", desc: "If the worst happens, you won't be directed to a nameless call center on the mainland. The team at Hoku Insurance stands by your side, acting as your advocate throughout the claims process." },
 ];
 
@@ -29,7 +29,7 @@ const PersonalLines = () => {
       />
       <ServicePageLayout title="Personal Insurance: Protecting What Matters Most in Hawaii" subtitle="Personal Lines" heroImage={hawaiiHome}>
         <p className="text-muted-foreground leading-relaxed mb-6">
-          At Hoku Insurance, we understand that your home, your car, and your personal possessions represent more than just financial investments—they are the foundation of your life here in the islands. Living in Hawaii brings unique joys, from the North Shore swells to the quiet beauty of upcountry living, but it also brings unique risks. That is why we are committed to helping you protect your home, auto, and personal assets with tailored policies designed for Hawaii residents.
+          At Hoku Insurance, we understand that your home, car, and personal possessions are more than financial investments. They're the foundation of your life in the islands. Living in Hawaii brings real joys, from the North Shore swells to the quiet of upcountry living, and it brings real risks too. That's why we help you protect your home, auto, and personal assets with policies built for Hawaii residents.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-12">
           Generic, one-size-fits-all insurance often fails to account for the specific needs of our local community. Whether it's navigating the complexities of hurricane signatures, lava zone requirements, or the high costs of vehicle repair in the middle of the Pacific, you need an insurance partner who speaks the local language of risk.

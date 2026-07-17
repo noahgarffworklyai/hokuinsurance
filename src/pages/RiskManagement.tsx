@@ -5,7 +5,7 @@ import riskStrategy from "@/assets/risk-strategy.jpg";
 import SEO from "@/components/SEO";
 
 const pillars = [
-  { icon: Search, title: "Comprehensive Risk Identification", desc: "We don't just look at the obvious. Our team conducts deep-dive assessments to identify \"hidden\" risks—from supply chain vulnerabilities in the middle of the Pacific to cyber-security gaps and physical safety hazards on your job site." },
+  { icon: Search, title: "Comprehensive Risk Identification", desc: "We don't just look at the obvious. Our team conducts deep-dive assessments to identify hidden risks, from supply chain vulnerabilities in the middle of the Pacific to cybersecurity gaps and safety hazards on your job site." },
   { icon: ShieldCheck, title: "Loss Control & Prevention", desc: "Once risks are identified, we provide actionable guidance on how to eliminate or mitigate them. This might include implementing new safety protocols, enhancing driver training for your commercial fleet, or advising on property retrofitting to withstand island weather extremes." },
   { icon: Users, title: "Safety Culture Development", desc: "A business is only as safe as its least-informed employee. We help you develop internal training programs and safety handbooks that empower your team to be your first line of defense." },
   { icon: FileText, title: "Contractual Risk Transfer", desc: "Often, the best way to manage risk is to ensure it stays where it belongs. We offer guidance on reviewing vendor contracts and lease agreements to ensure you aren't unknowingly assuming the liabilities of others." },
