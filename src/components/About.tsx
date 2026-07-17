@@ -69,7 +69,7 @@ const About = () => {
             </div>
             <div className="bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] rounded-xl px-7 py-5 mt-5">
               <blockquote className="text-[15px] font-heading italic text-white/85 leading-relaxed">
-                "We don't just sell policies — we build lasting relationships."
+                "We don't just sell policies. We build lasting relationships."
               </blockquote>
               <span className="text-[10px] tracking-[0.25em] uppercase text-accent/80 font-semibold mt-3 block">Hoku Insurance</span>
             </div>

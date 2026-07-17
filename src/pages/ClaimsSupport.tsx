@@ -5,14 +5,14 @@ import hawaiiBeach from "@/assets/hawaii-beach.jpg";
 import SEO from "@/components/SEO";
 
 const stages = [
-  { icon: AlertCircle, title: "Immediate Response & Guidance", desc: "From the moment a loss occurs, we are here to advise on the critical first steps—whether that's securing a property from further damage or documenting a liability incident." },
+  { icon: AlertCircle, title: "Immediate Response & Guidance", desc: "From the moment a loss occurs, we're there to guide the critical first steps, whether that's securing a property from further damage or documenting a liability incident." },
   { icon: FileSearch, title: "Expert Documentation Support", desc: "A successful claim depends on clear, accurate information. We help you gather the necessary evidence, photos, and records to present a professional and undeniable case to the insurance carrier." },
   { icon: MessageCircle, title: "Proactive Communication", desc: "One of the greatest frustrations in insurance is the \"black hole\" of waiting for updates. We act as the bridge between you and the carrier, providing regular status reports and ensuring your file remains a priority." },
   { icon: Scale, title: "Advocacy in Dispute Resolution", desc: "If a carrier's initial assessment doesn't align with the reality of your loss, we step in. We use our deep knowledge of policy language and local repair costs to advocate for the full benefits you are entitled to under your coverage." },
 ];
 
 const differences = [
-  { icon: MapPin, title: "Understanding the Hawaii Context", desc: "Claims in the islands come with unique logistical challenges. From the high cost of shipping materials to the specialized labor required for island-specific construction, we understand the local economy. We ensure that adjusters—who may be assessing your claim from thousands of miles away—account for the \"Hawaii factor\" in their valuations." },
+  { icon: MapPin, title: "Understanding the Hawaii Context", desc: "Claims in the islands come with unique logistical challenges. From the high cost of shipping materials to the specialized labor required for island-specific construction, we understand the local economy. We make sure adjusters, who may be assessing your claim from thousands of miles away, account for the \"Hawaii factor\" in their valuations." },
   { icon: Handshake, title: "A Consultative Partnership", desc: "We treat every claim as a learning opportunity. Once a resolution is reached, we sit down with you to review the incident. This consultative approach helps us identify if adjustments are needed in your risk management strategies to prevent a similar occurrence in the future." },
   { icon: Clock, title: "Speed and Efficiency", desc: "Time is money, especially for a business facing a disruption. Our local presence allows us to move quickly, pushing for a timely resolution so you can focus on what matters most: getting back to work and moving forward with your life." },
   { icon: Heart, title: "Integrity and Fairness", desc: "Our goal is simple: to ensure you are treated fairly. We hold carriers accountable to the promises made in your policy, providing the professional weight and industry expertise necessary to level the playing field." },
@@ -28,7 +28,7 @@ const ClaimsSupport = () => {
       />
       <ServicePageLayout title="Claims Support: Your Advocate in the Moments That Matter" subtitle="Claims Support" heroImage={hawaiiBeach}>
         <p className="text-muted-foreground leading-relaxed mb-6">
-          When the unexpected happens, the value of an insurance policy is no longer found in the fine print of a contract—it is found in the quality of the support you receive. At Hoku Insurance, we understand that filing a claim can be one of the most stressful experiences for any business owner or resident. That is why we provide dedicated local claims advocacy to guide you through the process and ensure fair, timely resolution.
+          When the unexpected happens, the value of an insurance policy isn't in the fine print. It's in the quality of the support you receive. Filing a claim can be one of the most stressful experiences for a business owner or resident, so we provide dedicated local claims advocacy to guide you through the process and secure a fair, timely resolution.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-12">
           In a world of automated phone trees and mainland call centers, Hoku Insurance stands apart by offering a human-centric, "Hokuleʻa Star" approach to claims. We don't just hand you a carrier's 1-800 number and wish you luck; we step into the arena with you, acting as your professional advocate from the initial report to the final settlement.

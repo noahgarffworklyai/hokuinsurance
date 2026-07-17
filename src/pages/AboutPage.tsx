@@ -50,13 +50,14 @@ const AboutPage = () => {
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Hoku — meaning "star" in Hawaiian — reflects our commitment to being a guiding light for our clients.
+                Hoku, meaning "star" in Hawaiian, reflects our commitment to being a guiding light for our clients.
                 As a locally owned insurance agency in Kailua-Kona, we understand the unique needs of Hawaii's
                 businesses and families.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Through our sister company, we also provide comprehensive Administrative Services Organization (ASO)
-                solutions, helping businesses streamline payroll, HR, and compliance — all under one roof.
+                solutions, helping businesses streamline payroll, HR, compliance, and employee management,
+                all under one roof.
               </p>
 
               <ul className="space-y-3 mb-16">
