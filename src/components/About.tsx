@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const highlights = [
   "Full-service commercial & personal P&C agency",
   "Deep knowledge of Hawaii-specific risks",
-  "Sister company offering ASO services",
+  "Sister company offering payroll & HR services",
   "Dedicated claims advocacy & support",
   "Locally owned and operated in Kailua-Kona",
 ];
@@ -28,13 +28,13 @@ const About = () => {
               <span className="text-gradient-gold">Rooted in Aloha</span>
             </h2>
             <p className="text-white/55 leading-[1.8] mb-4 text-[15px]">
-              Hoku — meaning "star" in Hawaiian — reflects our commitment to being a guiding light for our clients. 
+              Hoku, meaning "star" in Hawaiian, reflects our commitment to being a guiding light for our clients. 
               As a locally owned insurance agency in Kailua-Kona, we understand the unique needs of Hawaii's 
               businesses and families.
             </p>
             <p className="text-white/55 leading-[1.8] mb-10 text-[15px]">
-              Through our sister company, we also provide comprehensive Administrative Services Organization (ASO) 
-              solutions, helping businesses streamline payroll, HR, and compliance — all under one roof.
+              Through our sister company, Hoku HR Services, we provide comprehensive payroll, HR, and compliance solutions, 
+              giving businesses the support they need all under one roof.
             </p>
 
             <ul className="space-y-3.5">
