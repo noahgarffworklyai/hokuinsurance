@@ -6,4 +6,4 @@ https://www.hokuins.com/* https://hokuinsurance.com/:splat 301!
 https://www.hokuinsurance.com/* https://hokuinsurance.com/:splat 301!
 
 # SPA fallback (keep this LAST)
-/ * /index.html 200
+/*  /index.html  200
