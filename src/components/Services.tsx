@@ -29,7 +29,7 @@ const services = [
   },
   {
     icon: Umbrella,
-    title: "Risk Management",
+    title: "Risk Management & Safety",
     description: "Proactive risk assessment and loss prevention strategies to protect your business.",
     href: "/risk-management",
   },
