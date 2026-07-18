@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <img src={hokuLogo} alt="Hoku Insurance" className="h-16 w-auto mb-6" loading="lazy" decoding="async" />
             <p className="text-muted-foreground text-sm leading-[1.8]">
-              Full-service commercial and personal lines Property &amp; Casualty insurance agency serving Hawaii with
+              Full-service commercial and personal lines Property & Casualty insurance agency serving Hawaii with
               Aloha.
             </p>
           </div>
