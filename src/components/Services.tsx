@@ -24,7 +24,7 @@ const services = [
   {
     icon: Users,
     title: "Payroll & HR",
-    description: "Payroll, HR, compliance, and employee management through our sister company Hoku Resources, powered by isolved.",
+    description: "Payroll, HR, compliance, and employee management through our sister company Hoku HR Services.",
     href: "/aso-services",
   },
   {
