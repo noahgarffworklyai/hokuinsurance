@@ -1,11 +1,10 @@
-import { Briefcase, DollarSign, ClipboardCheck, ShieldCheck } from "lucide-react";
+import { Briefcase, DollarSign, ClipboardCheck } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const asoServices = [
   { icon: DollarSign, title: "Payroll Administration", desc: "Accurate, timely payroll processing with tax compliance." },
   { icon: Briefcase, title: "HR Management", desc: "Employee onboarding, benefits administration, and policy development." },
   { icon: ClipboardCheck, title: "Compliance", desc: "Stay current with federal, state, and local employment regulations." },
-  { icon: ShieldCheck, title: "Risk & Safety", desc: "Workplace safety programs and workers' comp management." },
 ];
 
 const ASOSection = () => {
@@ -28,7 +27,7 @@ const ASOSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {asoServices.map((svc, i) => (
             <div
               key={svc.title}
