@@ -24,7 +24,7 @@ const ASOSection = () => {
             Hoku HR Services
           </h2>
           <p className="mt-6 text-muted-foreground max-w-lg mx-auto leading-[1.8] text-[15px]">
-            Through our partnership with isolved, Hoku HR Services delivers payroll, HR, compliance, and employee management, so you can focus on growing your business.
+            Hoku HR Services delivers payroll, HR, compliance, and employee management, so you can focus on growing your business.
           </p>
         </div>
 
