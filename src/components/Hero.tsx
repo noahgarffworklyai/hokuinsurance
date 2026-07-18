@@ -40,7 +40,7 @@ const Hero = () => {
             className="text-lg text-white/55 font-body leading-[1.85] mb-14 max-w-lg opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.5s" }}
           >
-            Full-service commercial and personal lines Property &amp; Casualty insurance, backed by local expertise and
+            Full-service commercial and personal lines Property & Casualty insurance, backed by local expertise and
             genuine Aloha.
           </p>
           <div className="flex flex-wrap gap-4 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.7s" }}>
