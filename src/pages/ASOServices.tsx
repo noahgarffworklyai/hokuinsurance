@@ -5,8 +5,8 @@ import teamMeeting from "@/assets/team-meeting.jpg";
 import SEO from "@/components/SEO";
 
 const services = [
-  { icon: DollarSign, title: "Precise Payroll Processing", desc: "Through our trusted partnership, we facilitate a seamless, end-to-end payroll cycle. This includes direct deposits, tax withholdings, and the accurate filing of state and federal payroll taxes, ensuring your team is paid correctly and on time, every time." },
-  { icon: Briefcase, title: "Human Resources Support", desc: "Through our partnership with isolved, we provide your business with the robust infrastructure and digital tools of a professional HR department. While you retain full ownership of your HR operations, we equip you with a powerful platform and dedicated guidance to manage performance reviews, navigate disciplinary procedures, and draft employee handbooks tailored to Hawaii's unique workplace culture." },
+  { icon: DollarSign, title: "Precise Payroll Processing", desc: "Through Hoku HR Services, we facilitate a seamless, end-to-end payroll cycle. This includes direct deposits, tax withholdings, and the accurate filing of state and federal payroll taxes, ensuring your team is paid correctly and on time, every time." },
+  { icon: Briefcase, title: "Human Resources Support", desc: "We provide your business with the robust infrastructure and digital tools of a professional HR department. While you retain full ownership of your HR operations, we equip you with a powerful platform and dedicated guidance to manage performance reviews, navigate disciplinary procedures, and draft employee handbooks tailored to Hawaii's unique workplace culture." },
   { icon: ClipboardCheck, title: "Rigorous Compliance Management", desc: "Staying compliant with Hawaii's TDI (Temporary Disability Insurance), Prepaid Healthcare Act, and workers' compensation requirements is a full-time job. Hoku HR Services monitors legislative changes so you don't have to." },
   { icon: Users, title: "Employee Lifecycle Management", desc: "We streamline your internal administrative workflows from onboarding new hires to managing separations and COBRA administration, ensuring a professional, seamless experience for your staff." },
 ];
@@ -26,7 +26,7 @@ const ASOServicesPage = () => {
         description="Human Capital Management for Hawaii businesses. Payroll processing, HR support, compliance & employee management delivered by Hoku HR Services in Kailua-Kona."
         canonical="/aso-services"
       />
-      <ServicePageLayout title="Payroll & HR Services: Human Capital Management for Hawaii Businesses" subtitle="Sister Company" heroImage={teamMeeting}>
+      <ServicePageLayout title="Hoku HR Services: Human Capital Management for Hawaii Businesses" subtitle="Sister Company" heroImage={teamMeeting}>
         <p className="text-muted-foreground leading-relaxed mb-6">
           Running a business in Hawaii is rewarding, but the administrative burden can often feel like trekking up Mauna Kea in a gale. Between complex labor laws, payroll taxes, and the ever-changing landscape of HR compliance, many business owners find themselves spending more time on paperwork than on their actual craft. This is where our sister company, Hoku HR Services, steps in to light the way.
         </p>
@@ -35,7 +35,7 @@ const ASOServicesPage = () => {
         </p>
 
         <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-8">
-          Comprehensive Workforce Solutions
+          Workforce Solutions & Employee Benefits
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-8">
           Hoku HR Services offers a suite of services designed to scale with your business, whether you're a growing startup in Honolulu or an established family business in Kona.
