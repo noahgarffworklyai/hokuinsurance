@@ -1,4 +1,5 @@
-import { Briefcase, DollarSign, ClipboardCheck } from "lucide-react";
+import { Briefcase, DollarSign, ClipboardCheck, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const asoServices = [
@@ -43,6 +44,21 @@ const ASOSection = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">{svc.desc}</p>
             </div>
           ))}
+        </div>
+
+        <div
+          className={`mt-14 text-center transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+          style={{ transitionDelay: isVisible ? "600ms" : "0ms" }}
+        >
+          <Link
+            to="/aso-services"
+            className="inline-flex items-center gap-2 gradient-gold text-white px-7 py-3.5 text-[13px] font-semibold tracking-[0.15em] uppercase rounded hover:shadow-lg hover:shadow-accent/20 transition-all duration-300"
+          >
+            Explore Payroll & HR
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>
